@@ -12,41 +12,41 @@ const ServicesSection = (props) => {
     <StyledServices>
       <StyledDescription>
         <h2>
-          High <span> quality</span> Services
+          High <span>quality</span> services
         </h2>
         <StyledCards>
           <StyledCard>
             <div className="icon">
-              <img src={clock} alt="icon" />
+              <img alt="icon" src={clock} />
               <h3>Efficient</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
+            <p>Lorem ipsum dolor sit amet.</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img src={teamwork} alt="icon" />
+              <img alt="icon" src={teamwork} />
               <h3>Teamwork</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
+            <p>Lorem ipsum dolor sit amet.</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img src={diaphragm} alt="icon" />
-              <h3>Efficient</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <img alt="icon" src={diaphragm} />
+              <h3>Diaphragm</h3>
             </div>
+            <p>Lorem ipsum dolor sit amet.</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img src={money} alt="icon" />
+              <img alt="icon" src={money} />
               <h3>Affordable</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
             </div>
+            <p>Lorem ipsum dolor sit amet.</p>
           </StyledCard>
         </StyledCards>
       </StyledDescription>
       <StyledImage>
-        <img src={home2} alt="" />
+        <img alt="camera" src={home2} />
       </StyledImage>
     </StyledServices>
   );
@@ -64,9 +64,6 @@ const StyledServices = styled(StyledAbout)`
 const StyledCards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: 1300px) {
-    justify-content: center;
-  }
 `;
 const StyledCard = styled.div`
   flex-basis: 20rem;
