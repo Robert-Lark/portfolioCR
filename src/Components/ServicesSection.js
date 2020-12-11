@@ -5,12 +5,7 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 import styled from "styled-components";
-import {
-  StyledAbout,
-  StyledDescription,
-  StyledHide,
-  StyledImage,
-} from "../styles";
+import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 
 const ServicesSection = (props) => {
   return (
