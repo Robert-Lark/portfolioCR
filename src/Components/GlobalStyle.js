@@ -49,9 +49,6 @@ h2{
         font-size: 1.4rem;
         line-height: 150%;
     }
-    img{
-        border-radius: 25px;
-    }
 `;
 
 
