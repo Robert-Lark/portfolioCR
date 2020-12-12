@@ -1,6 +1,7 @@
 import React from "react";
 import home1 from "../img/home1.png";
-import {titleAnimation, fade} from '../Animation'
+import {titleAnimation, fade, photoAnimation} from '../Animation'
+import Wave from './Wave'
 //import styled from "styled-components";
 import {
   StyledAbout,
@@ -37,8 +38,9 @@ const AboutSection = () => {
         <motion.button variants={fade}>Contact Us</motion.button>
       </StyledDescription>
       <StyledImage>
-        <img src={home1} alt="guy with a camera" />
+        <motion.img variants={photoAnimation} src={home1} alt="guy with a camera" />
       </StyledImage>
+      <Wave />
     </StyledAbout>
   );
 };
