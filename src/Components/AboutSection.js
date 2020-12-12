@@ -1,5 +1,6 @@
 import React from "react";
 import home1 from "../img/home1.png";
+import {titleAnimation, fade} from '../Animation'
 //import styled from "styled-components";
 import {
   StyledAbout,
@@ -8,28 +9,32 @@ import {
   StyledImage,
 } from "../styles";
 
+import { motion } from "framer-motion";
+
 const AboutSection = () => {
+  
+
   return (
-    <StyledAbout>
+    <StyledAbout exit="exit">
       <StyledDescription>
-        <div className="title">
+        <motion.div>
           <StyledHide>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               your <span>dreams</span> come
-            </h2>
+            </motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>true.</h2>
+            <motion.h2 variants={titleAnimation}>true.</motion.h2>
           </StyledHide>
-        </div>
-        <p>
+        </motion.div>
+        <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have. We
           have proffesionals with amazing skills.
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </StyledDescription>
       <StyledImage>
         <img src={home1} alt="guy with a camera" />

@@ -4,7 +4,7 @@ import { StyledAbout } from "../styles";
 
 const FaqSection = () => {
   return (
-    <StyledFaq>
+    <StyledFaq >
       <h2>
         Any Queastions? <span>FAQ</span>
       </h2>

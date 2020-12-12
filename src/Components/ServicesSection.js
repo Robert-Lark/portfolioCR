@@ -9,7 +9,7 @@ import { StyledAbout, StyledDescription, StyledImage } from "../styles";
 
 const ServicesSection = (props) => {
   return (
-    <StyledServices>
+    <StyledServices >
       <StyledDescription>
         <h2>
           High <span>quality</span> services
