@@ -20,11 +20,11 @@ const AboutSection = () => {
       <StyledDescription>
         <motion.div>
           <StyledHide>
-            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
+            <motion.h2 variants={titleAnimation}>Graduate of the <span style={{color: "#EC3944"}}>Lambda School</span> of</motion.h2>
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={titleAnimation}>
-              your <span>dreams</span> come
+              <span>Full Stack Web Development</span> with a strong proficiency in 
             </motion.h2>
           </StyledHide>
           <StyledHide>

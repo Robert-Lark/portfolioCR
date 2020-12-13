@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import athlete from "../img/athlete-small.png";
 import racer from "../img/theracer-small.png";
 import goodTimes from "../img/goodtimes-small.png";
 import styled from "styled-components";
+import CSSLogo from "../img/cssLogo.png";
+import HTMLLogo from "../img/htmlLogo.png";
+import NodeLogo from "../img/NODELOGOO.png";
+import ReactDb from "../img/reactLogo.png";
+import JSLogo from "../img/JS.png";
+import ScrollTop from "../Components/ScrollTop";
+
 import { motion } from "framer-motion";
 import {
   SliderAnimation,
@@ -13,11 +20,14 @@ import {
   photoAnimation,
   lineAnimation,
 } from "../Animation";
-import {useScroll} from '../Components/useScroll'
+import { useScroll } from "../Components/useScroll";
 
 const OurWork = () => {
-    const [element, controls] = useScroll()
-    const [element2, controls2] = useScroll()
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <StyledWork
       exit="exit"
@@ -26,11 +36,14 @@ const OurWork = () => {
       animate="show"
       style={{ background: "#fff" }}
     >
-        <motion.div variants={SliderContainer}>
-      <Frame1 variants={SliderAnimation}></Frame1>
-      <Frame2 variants={SliderAnimation}></Frame2>
-      <Frame3 variants={SliderAnimation}></Frame3>
-      <Frame4 variants={SliderAnimation}></Frame4>
+      <motion.div variants={SliderContainer}>
+        <Frame1>
+          <StyledImage variants={SliderAnimation} src={NodeLogo} alt="logo" />
+          <StyledImage variants={SliderAnimation} src={ReactDb} alt="logo" />
+          <StyledImage variants={SliderAnimation} src={CSSLogo} alt="logo" />
+          <StyledImage variants={SliderAnimation} src={JSLogo} alt="logo" />
+          <StyledImage variants={SliderAnimation} src={HTMLLogo} alt="logo" />
+        </Frame1>
       </motion.div>
       <StyledMovie>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
@@ -41,14 +54,24 @@ const OurWork = () => {
           </StyledHide>
         </Link>
       </StyledMovie>
-      <StyledMovie ref={element} variants={fade} animate={controls} initial="hidden">
+      <StyledMovie
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+      >
         <motion.h2>The Racer</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/the-racer">
           <motion.img variants={photoAnimation} src={racer} alt="racer" />
         </Link>
       </StyledMovie>
-      <StyledMovie ref={element2} variants={fade} animate={controls2} initial="hidden">
+      <StyledMovie
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+      >
         <motion.h2>Good Times </motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/good-times">
@@ -59,6 +82,7 @@ const OurWork = () => {
           />
         </Link>
       </StyledMovie>
+      <ScrollTop />
     </StyledWork>
   );
 };
@@ -69,6 +93,9 @@ const StyledWork = styled(motion.div)`
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
+  }
+  @media (max-width: 1300) {
+    padding: 2rem 2rem;
   }
 `;
 const StyledMovie = styled(motion.div)`
@@ -91,23 +118,16 @@ const StyledHide = styled.div`
 //frameAnimation
 
 const Frame1 = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: fixed;
-  left: 0;
   top: 10%;
-  width: 100%;
-  height: 100vh;
-  background: #fffebf;
-  z-index: 2;
+  right: 15%;
 `;
 
-const Frame2 = styled(Frame1)`
-  background: #ff8efb;
+const StyledImage = styled(motion.img)`
+  width: 15%;
 `;
 
-const Frame3 = styled(Frame1)`
-  background: #8ed2ff;
-`;
-const Frame4 = styled(Frame1)`
-  background: #8effa0;
-`;
 export default OurWork;

@@ -9,7 +9,7 @@ const MovieDetail = () => {
   const history = useHistory();
   //get the url the user has typed in
   const url = history.location.pathname;
-  // eslint-disable-next-line 
+  // eslint-disable-next-line
   const [movies, setMovies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
@@ -73,6 +73,10 @@ const StyledAwards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1500) {
+    display: block;
+    margin: 2rem 2rem;
+  }
 `;
 
 const StyledAward = styled.div`

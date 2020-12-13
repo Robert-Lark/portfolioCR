@@ -19,7 +19,7 @@ function App() {
           <Route exact path="/">
             <AboutUs />
           </Route>
-          <Route exact path="/work">
+          <Route exact path="/qualifications">
             <OurWork />
           </Route>
           <Route path="/work/:id">
