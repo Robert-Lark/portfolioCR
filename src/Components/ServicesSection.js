@@ -22,7 +22,7 @@ const ServicesSection = () => {
     >
       <StyledDescription>
         <h2>
-          High <span>quality</span> services
+          The <span>tools</span> I use.
         </h2>
         <StyledCards>
           <StyledCard>

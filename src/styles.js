@@ -33,6 +33,7 @@ export const StyledImage = styled.div`
   overflow: hidden;
   z-index: 2;
   img {
+    margin-top: 5%;
     width: 100%;
     height: 80vh;
     object-fit: cover;

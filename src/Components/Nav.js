@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {useLocation} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 
 
 const Nav = () => {
-  const pathname = useLocation()
+  const { pathname } = useLocation();
   return (
     <StyledNav>
       <h1>
@@ -20,7 +20,7 @@ const Nav = () => {
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/" ? "100%" : "0%" }}
           />
         </li>
         <li>
@@ -74,10 +74,9 @@ const StyledNav = styled.nav`
   }
   @media (max-width: 1300px) {
     flex-direction: column;
-    padding: 2rem 1rem;
     #logo {
       display: inline-block;
-      padding: 2rem;
+      
     }
     ul {
       padding: 2rem;
@@ -96,5 +95,14 @@ const StyledLine = styled(motion.div)`
   position: absolute;
   bottom: -80%;
   left: 60%;
+  @media (max-width: 1300px) {
+  height: 0.3rem;
+  background: #23d997;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 0%;
+  }
+    
 `;
 export default Nav;
