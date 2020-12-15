@@ -28,7 +28,7 @@ const Nav = () => {
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/qualifications" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/qualifications" ? "100%" : "0%"}}
           />
         </li>
         <li>
@@ -36,7 +36,7 @@ const Nav = () => {
           <StyledLine
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            animate={{ width: pathname === "/contact" ? "100%" : "0%" }}
           />
         </li>
       </ul>
