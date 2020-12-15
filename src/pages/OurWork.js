@@ -30,7 +30,11 @@ import {
 
 const OurWork = () => {
   const [element, controls] = useScroll();
+  const [element1, controls1] = useScroll();
   const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -149,342 +153,374 @@ const OurWork = () => {
         <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
       </DivImageOfAdvancedReactFP>
       {/* NODE */}
-      <motion.div
-        ref={element}
+      <NodeDiv
         variants={fade}
         animate={controls}
         initial="hidden"
+        ref={element}
       >
-        <NodeDiv>
-          <LogoImg
-            src={nodeLogo}
-            alt="lambdaLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-          The Complete Node.js Developer Course (3rd Edition)
-        </NodeDiv>
-        <InfoOnNodeDiv>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnNodeDiv>
-        <DivImageOfNodeFP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfNodeFP>
-        {/* PYTHON */}
-        <PythonDiv>
-          <LogoImg
-            src={PythonProgramLogo}
-            alt="PythonProgramLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-        </PythonDiv>
-        <InfoOnPythonDiv>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnPythonDiv>
-        <DivImageOfPythonFP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfPythonFP>
-        {/* ES6 */}
-        <Es6Div>
-          <LogoImg
-            src={ES6Logo}
-            alt="lambdaLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-        </Es6Div>
-        <InfoOnEs6Div>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE ES6 PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnEs6Div>
-        <DivImageOfes6FP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfes6FP>
-        {/* MASTER GATSBY */}
-        <MasterGatsbyDiv>
-          <LogoImg
-            src={masterGatsbyLogo}
-            alt="lambdaLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-        </MasterGatsbyDiv>
-        <InfoOnMasterGatsbyDiv>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnMasterGatsbyDiv>
-        <DivImageOfMasterGatsbyFP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfMasterGatsbyFP>
-        {/* MATERIAL UI */}
-      </motion.div>
-      <motion.div
-        ref={element2}
+        <LogoImg
+          src={nodeLogo}
+          alt="lambdaLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+        The Complete Node.js Developer Course (3rd Edition)
+      </NodeDiv>
+      <InfoOnNodeDiv>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnNodeDiv>
+      <DivImageOfNodeFP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfNodeFP>
+      {/* PYTHON */}
+      <PythonDiv
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+        ref={element}
+      >
+        <LogoImg
+          src={PythonProgramLogo}
+          alt="PythonProgramLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+      </PythonDiv>
+      <InfoOnPythonDiv>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnPythonDiv>
+      <DivImageOfPythonFP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfPythonFP>
+
+      {/* ES6 */}
+      <Es6Div
+        variants={fade}
+        animate={controls1}
+        initial="hidden"
+        ref={element1}
+      >
+        <LogoImg
+          src={ES6Logo}
+          alt="lambdaLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+      </Es6Div>
+      <InfoOnEs6Div>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE ES6 PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnEs6Div>
+      <DivImageOfes6FP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfes6FP>
+      {/* MASTER GATSBY */}
+      <MasterGatsbyDiv
+        variants={fade}
+        animate={controls1}
+        initial="hidden"
+        ref={element1}
+      >
+        <LogoImg
+          src={masterGatsbyLogo}
+          alt="lambdaLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+      </MasterGatsbyDiv>
+      <InfoOnMasterGatsbyDiv>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnMasterGatsbyDiv>
+      <DivImageOfMasterGatsbyFP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfMasterGatsbyFP>
+      {/* MATERIAL UI */}
+      <MaterialUIDiv
         variants={fade}
         animate={controls2}
         initial="hidden"
+        ref={element2}
       >
-        <MaterialUIDiv>
-          <LogoImg
-            src={materialUiLogo}
-            alt="materialUiLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-        </MaterialUIDiv>
-        <InfoOnMaterialUIDiv>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnMaterialUIDiv>
-        <DivImageOfMaterialUIFP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfMaterialUIFP>
-        {/* ADVANCED CSS & SASS */}
-        <AdvancedCSSDiv>
-          <LogoImg
-            src={AdvancedCSSLogo}
-            alt="lambdaLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-        </AdvancedCSSDiv>
-        <InfoOnAdvancedCSSDiv>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnAdvancedCSSDiv>
-        <DivImageOfAdvancedCSSFP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfAdvancedCSSFP>
-        {/* CREATIVE REACT & REDUX */}
-        <CreativeReactDiv>
-          <LogoImg
-            src={creativeReactLogo}
-            alt="creativeReactLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-        </CreativeReactDiv>
-        <InfoOnCreativeReactDiv>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnCreativeReactDiv>
-        <DivImageOfCreativeReactFP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfCreativeReactFP>
-        {/* BEGGINNER REACT */}
-        <BegReactDiv>
-          <LogoImg
-            src={begginerReactLog}
-            alt="begginerReactLogo"
-            style={{ width: "75%", borderRadius: "10%" }}
-          />
-        </BegReactDiv>
-        <InfoOnBegReactDiv>
-          <div style={{ textAlign: "center" }}>
-            <h5 style={{ marginBottom: "10px" }}>
-              INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-              aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-              ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-              saepe vel odit ipsa dolor corporis accusamus architecto rerum
-              voluptas laboriosam, ipsum, facilis soluta id voluptatem.
-            </h5>
-          </div>
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <ul style={{ paddingRight: "40px" }}>
-              <li>GraphQL Schema</li>
-              <li>Queries and Mutations</li>
-              <li>Resolvers</li>
-              <li>Cache Management</li>
-              <li>Sending Email</li>
-            </ul>
-            <ul>
-              <li>Charging Credit Cards</li>
-              <li>Pagination</li>
-              <li>Forms in React</li>
-              <li>Unit Testing</li>
-              <li>Mounting vs Shallow Rendering</li>
-            </ul>
-          </div>
-        </InfoOnBegReactDiv>
-        <DivImageOfBegReactFP>
-          <ImageOfFinalProject src={ReactCert} alt="cert" />
-          <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
-        </DivImageOfBegReactFP>
-        {/* BEGGINER JS */}
-      </motion.div>
-      <BegJSDiv>
+        <LogoImg
+          src={materialUiLogo}
+          alt="materialUiLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+      </MaterialUIDiv>
+      <InfoOnMaterialUIDiv>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnMaterialUIDiv>
+      <DivImageOfMaterialUIFP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfMaterialUIFP>
+      {/* ADVANCED CSS & SASS */}
+      <AdvancedCSSDiv
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+        ref={element2}
+      >
+        <LogoImg
+          src={AdvancedCSSLogo}
+          alt="lambdaLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+      </AdvancedCSSDiv>
+      <InfoOnAdvancedCSSDiv>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnAdvancedCSSDiv>
+      <DivImageOfAdvancedCSSFP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfAdvancedCSSFP>
+      {/* CREATIVE REACT & REDUX */}
+      <CreativeReactDiv
+        variants={fade}
+        animate={controls3}
+        initial="hidden"
+        ref={element3}
+      >
+        <LogoImg
+          src={creativeReactLogo}
+          alt="creativeReactLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+      </CreativeReactDiv>
+      <InfoOnCreativeReactDiv>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnCreativeReactDiv>
+      <DivImageOfCreativeReactFP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfCreativeReactFP>
+      {/* BEGGINNER REACT */}
+      <BegReactDiv
+        variants={fade}
+        animate={controls3}
+        initial="hidden"
+        ref={element3}
+      >
+        <LogoImg
+          src={begginerReactLog}
+          alt="begginerReactLogo"
+          style={{ width: "75%", borderRadius: "10%" }}
+        />
+      </BegReactDiv>
+      <InfoOnBegReactDiv>
+        <div style={{ textAlign: "center" }}>
+          <h5 style={{ marginBottom: "10px" }}>
+            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
+            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
+            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
+            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
+            ipsum, facilis soluta id voluptatem.
+          </h5>
+        </div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ul style={{ paddingRight: "40px" }}>
+            <li>GraphQL Schema</li>
+            <li>Queries and Mutations</li>
+            <li>Resolvers</li>
+            <li>Cache Management</li>
+            <li>Sending Email</li>
+          </ul>
+          <ul>
+            <li>Charging Credit Cards</li>
+            <li>Pagination</li>
+            <li>Forms in React</li>
+            <li>Unit Testing</li>
+            <li>Mounting vs Shallow Rendering</li>
+          </ul>
+        </div>
+      </InfoOnBegReactDiv>
+      <DivImageOfBegReactFP>
+        <ImageOfFinalProject src={ReactCert} alt="cert" />
+        <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
+      </DivImageOfBegReactFP>
+      {/* BEGGINER JS */}
+      <BegJSDiv
+        variants={fade}
+        animate={controls4}
+        initial="hidden"
+        ref={element4}
+      >
         <LogoImg
           src={bJSLogo}
           alt="bJSLogo"
@@ -524,7 +560,12 @@ const OurWork = () => {
         <ImageOfFinalProjectCode src={ReactCert} alt="cert" />
       </DivImageOfBegJSFP>
       {/* CSS GRID */}
-      <CSSGridDiv>
+      <CSSGridDiv
+        variants={fade}
+        animate={controls4}
+        initial="hidden"
+        ref={element4}
+      >
         <LogoImg
           src={cssGrid}
           alt="cssGridLogo"
