@@ -19,7 +19,7 @@ import creativeCodingClubLogo from "../img/creativeCodingClubLogo.jpg";
 import masterGatsbyLogo from "../img/masterGatsby.png";
 import AdvancedCSSLogo from "../img/AdvancedCssAndSass.jpg";
 import cssGrid from "../img/cssGrid.png";
-import { useScroll } from "../Components/useScroll";
+import { useScrollq } from "../Components/useScroll";
 import { motion } from "framer-motion";
 import {
   SliderAnimation,
@@ -29,11 +29,11 @@ import {
 } from "../Animation";
 
 const OurWork = () => {
-  const [element, controls] = useScroll();
-  const [element1, controls1] = useScroll();
-  const [element2, controls2] = useScroll();
-  const [element3, controls3] = useScroll();
-  const [element4, controls4] = useScroll();
+  const [element, controls] = useScrollq();
+  const [element1, controls1] = useScrollq();
+  const [element2, controls2] = useScrollq();
+  const [element3, controls3] = useScrollq();
+  const [element4, controls4] = useScrollq();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -83,28 +83,26 @@ const OurWork = () => {
       <LambdaInfoDiv>
         <div style={{ textAlign: "center" }}>
           <h5 style={{ marginBottom: "10px" }}>
-            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
-            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
-            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
-            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
-            ipsum, facilis soluta id voluptatem.
+            I graduate from Lambda's eighteen month Full Stack Web Development
+            program at the end of March. With a heavy focus on teamwork and
+            leadership skills Lambda has provided me a strong foundation for
+            entering the web dev workforce.
           </h5>
         </div>
         <div style={{ display: "flex", flexDirection: "row" }}>
           <ul style={{ paddingRight: "40px" }}>
-            <li>GraphQL Schema</li>
-            <li>Queries and Mutations</li>
-            <li>Resolvers</li>
-            <li>Cache Management</li>
-            <li>Sending Email</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Compilers</li>
+            <li>CLI's</li>
+            <li>Javascript</li>
           </ul>
           <ul>
-            <li>Charging Credit Cards</li>
-            <li>Pagination</li>
-            <li>Forms in React</li>
-            <li>Unit Testing</li>
-            <li>Mounting vs Shallow Rendering</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Node</li>
+            <li>Python</li>
+            <li>Proffesional Development</li>
           </ul>
         </div>
       </LambdaInfoDiv>
@@ -123,12 +121,10 @@ const OurWork = () => {
       <InfoOnAdvancedReactDiv>
         <div style={{ textAlign: "center" }}>
           <h5 style={{ marginBottom: "10px" }}>
-            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
-            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
-            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
-            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
-            ipsum, facilis soluta id voluptatem.
+            Updated in December 2020 this course looks at what React can do at a
+            deeper level. Harnessing the power of GraphQL to build query strings
+            and mutate data. The program gave me a strong familiarity &
+            confidence using React.
           </h5>
         </div>
         <div style={{ display: "flex", flexDirection: "row" }}>
@@ -142,7 +138,7 @@ const OurWork = () => {
           <ul>
             <li>Charging Credit Cards</li>
             <li>Pagination</li>
-            <li>Forms in React</li>
+            <li>Forms</li>
             <li>Unit Testing</li>
             <li>Mounting vs Shallow Rendering</li>
           </ul>
@@ -169,28 +165,26 @@ const OurWork = () => {
       <InfoOnNodeDiv>
         <div style={{ textAlign: "center" }}>
           <h5 style={{ marginBottom: "10px" }}>
-            INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos rerum magnam quod sed aliquid aperiam
-            optio ex quo quaerat quia? Repellendus nemo velit minima ipsa labore
-            vitae ipsum! Debitis possimus nisi, eaque fugit rem saepe vel odit
-            ipsa dolor corporis accusamus architecto rerum voluptas laboriosam,
-            ipsum, facilis soluta id voluptatem.
+            A 35 hour all encompassing course on development using NodeJs.
+            Taught by Andrew Mead and Rob Percival it is one of the highest
+            rated Node courses on the online learning platform Udemy. Topics
+            covered included but were not limited to:
           </h5>
         </div>
         <div style={{ display: "flex", flexDirection: "row" }}>
           <ul style={{ paddingRight: "40px" }}>
-            <li>GraphQL Schema</li>
-            <li>Queries and Mutations</li>
-            <li>Resolvers</li>
-            <li>Cache Management</li>
-            <li>Sending Email</li>
+            <li>Call Stacks, Callback Queues, and the Event Loop</li>
+            <li>Making/Customizing HTTP Requests</li>
+            <li>Handling Errors</li>
+            <li>Static Assets</li>
+            <li>Dynamic Pages with Templating</li>
           </ul>
           <ul>
-            <li>Charging Credit Cards</li>
-            <li>Pagination</li>
-            <li>Forms in React</li>
-            <li>Unit Testing</li>
-            <li>Mounting vs Shallow Rendering</li>
+            <li>The Query String</li>
+            <li>SSH Keys</li>
+            <li>MongoDB and NoSQL Databases</li>
+            <li>REST APIs and Mongoose</li>
+            <li>Securely Storing Passwords</li>
           </ul>
         </div>
       </InfoOnNodeDiv>
