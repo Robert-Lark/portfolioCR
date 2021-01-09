@@ -630,22 +630,22 @@ const TitleDiv = styled(motion.div)`
     font-size: 2rem;
 
   }
-  @media (max-width: 2250px) {
+  @media (max-width: 1350px) {
     border: 2px solid brown;
   }
-  @media (max-width: 2200px) {
+  @media (max-width: 1300px) {
     border: 2px solid coral;
   }
-  @media (max-width: 2150px) {
+  @media (max-width: 1250px) {
     border: 2px solid cyan;
   }
-  @media (max-width: 2100px) {
+  @media (max-width: 1200px) {
     border: 2px solid gold;
   }
-  @media (max-width: 2050px) {
+  @media (max-width: 1150px) {
     border: 2px solid red;
   }
-  @media (max-width: 2000px) {
+  @media (max-width: 1100px) {
     border: 2px solid blue;
   }
   @media (max-width: 1050px) {
