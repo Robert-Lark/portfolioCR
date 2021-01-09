@@ -102,7 +102,7 @@ const OurWork = () => {
             <li>Redux</li>
             <li>Node</li>
             <li>Python</li>
-            <li>Proffesional Development</li>
+            <li>Profesional Development</li>
           </ul>
         </div>
       </LambdaInfoDiv>
@@ -628,6 +628,41 @@ const TitleDiv = styled(motion.div)`
   grid-row: 1 / span 1;
   @media (max-width: 700px) {
     font-size: 2rem;
+
+  }
+  @media (max-width: 800px) {
+    border: 2px solid coral;
+  }
+  @media (max-width: 750px) {
+    border: 2px solid cyan;
+  }
+
+  @media (max-width: 700px) {
+    border: 2px solid gold;
+  }
+  @media (max-width: 650px) {
+    border: 2px solid red;
+  }
+  @media (max-width: 600px) {
+    border: 2px solid blue;
+  }
+  @media (max-width: 550px) {
+    border: 2px solid green;
+  }
+  @media (max-width: 500px) {
+    border: 2px solid yellow;
+  }
+  @media (max-width: 450px) {
+    border: 2px solid pink;
+  }
+  @media (max-width: 400px) {
+    border: 2px solid purple;
+  }
+  @media (max-width: 350px) {
+    border: 2px solid grey;
+  }
+  @media (max-width: 300px) {
+    border: 2px solid brown;
   }
 `;
 const TitleInfoDiv = styled(motion.div)`
