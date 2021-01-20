@@ -125,7 +125,7 @@ gap: 20%;
   }
   @media (max-width: 400px) {
     grid-template-columns: 10px 10px;
-  grid-template-rows: 10px 10px 1fr;
+  grid-template-rows: 5px 1fr;
   gap: 150px;
   }
 `;
