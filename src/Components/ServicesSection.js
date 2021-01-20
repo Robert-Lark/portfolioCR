@@ -7,6 +7,7 @@ import material from "../img/Tools/material_ui.png";
 import grid from "../img/Tools/grid.jpeg";
 import blisk from "../img/Tools/Blisk.jpg";
 import greensock from "../img/Tools/greensock.png";
+import figma from "../img/Tools/figma.png";
 //Styles
 import {StyledTools, StyledDescription} from "../styles";
 import styled from "styled-components";
@@ -61,7 +62,7 @@ const ServicesSection = () => {
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img alt="icon" src={greensock} />
+              <img alt="icon" src={figma} />
             </div>
           </StyledCard>
           <StyledCard>
@@ -101,6 +102,7 @@ const StyledCards = styled.div`
   }
   @media (max-width: 1300px) {
     justify-content: center;
+    border: 4px solid red;
   }
   @media (max-width: 900px) {
     grid-template-columns: 100px 100px;
