@@ -105,7 +105,7 @@ const StyledCards = styled.div`
     justify-content: center;
  width: 100vw;
  height: 40vh;
- gap: 15%;
+ grid-template-columns: 10% 10% 10% 10%;
   }
   @media (max-width: 900px) {
     grid-template-columns: 100px 100px;
