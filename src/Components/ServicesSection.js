@@ -91,7 +91,6 @@ text-align: center;
 }
 @media (max-width: 1300px) {
     justify-content: center;
- border: 2px solid red;
   }
 `;
 const StyledCards = styled.div`
@@ -148,6 +147,15 @@ const StyledCard = styled.div`
       color: black;
       padding: 1rem;
     }
+    @media (max-width: 1300px) {
+      img {
+      float: left;
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin: 100px;
+  }
     @media (max-width: 600px) {
       img {
       float: left;

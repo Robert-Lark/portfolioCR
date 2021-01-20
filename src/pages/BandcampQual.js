@@ -158,12 +158,12 @@ const BandcampQual = () => {
           </Logo>
           <Line></Line>
           <Info>
-          <div style={{textAlign: "center"}}>
+            <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                A 35 hour all encompassing course on development using NodeJs.
-                Taught by Andrew Mead and Rob Percival it is one of the highest
-                rated Node courses on the online learning platform Udemy. Topics
-                covered included but were not limited to:
+                This amazing course from Wes Bos helped me a great deal solving
+                coding challenges using the latest updates to Javascript. No
+                topic was left untouched and I feel confident in my abilities to
+                tackle challenging problems using JS:
               </h5>
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
@@ -352,7 +352,6 @@ const BandcampQual = () => {
 };
 
 const StyledWork = styled.div`
-
   padding: 5rem 10rem;
   h5 {
     padding: 17px;
@@ -378,7 +377,7 @@ const StyledWork = styled.div`
     padding: 2rem 2rem;
   }
   @media (max-width: 600px) {
-  height: 100%;
+    height: 100%;
   }
   @media (max-width: 600px) {
   }
@@ -389,14 +388,14 @@ const Line = styled.div`
   border-top: 2px solid black;
   height: 1px;
   @media (max-width: 900px) {
-  display: none;
+    display: none;
   }
   @media (max-width: 470px) {
     width: 30rem;
   }
 `;
 const CoursesGrid = styled.div`
-height: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   grid-gap: 20px;
