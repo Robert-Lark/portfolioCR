@@ -17,7 +17,7 @@ const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <StyledServices
-      //variants={scrollReveal}
+      variants={scrollReveal}
       animate={controls}
       initial="hidden"
       ref={element}

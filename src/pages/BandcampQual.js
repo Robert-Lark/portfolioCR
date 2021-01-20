@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import styled from "styled-components";
 import advancedReactLogo from "../img/advancedReactLogo.png";
 import ScrollTop from "../Components/ScrollTop";
-import ReactCert from "../img/ReactCert.png";
+
 import lambdaLogo from "../img/lambdaLogo.png";
 import ES6Logo from "../img/ES6Logo.jpg";
 import nodeLogo from "../img/nodeLogo.jpg";
@@ -11,7 +11,7 @@ import creativeReactLogo from "../img/creativeReact.png";
 import AdvancedCSSLogo from "../img/AdvancedCssAndSass.jpg";
 import cssGrid from "../img/cssGrid.png";
 import {useScrollq} from "../Components/useScroll";
-import {motion} from "framer-motion";
+
 import {pageAnimation, fade} from "../Animation";
 
 const BandcampQual = () => {
@@ -521,12 +521,7 @@ const Info = styled.div`
     }
   }
 `;
-const FP = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-`;
+
 //IMAGES
 
 export default BandcampQual;

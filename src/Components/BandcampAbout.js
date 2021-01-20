@@ -14,7 +14,7 @@ import HTMLLogo from "../img/htmlLogo.png";
 import NodeLogo from "../img/NODELOGOO.png";
 import ReactDb from "../img/reactLogo.png";
 import JSLogo from "../img/JS.png";
-import PythonLogo from "../img/pythonLogo.png";
+
 
 import {motion} from "framer-motion";
 
