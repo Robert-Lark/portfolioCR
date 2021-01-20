@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin:0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html{
@@ -17,7 +18,7 @@ html{
     }
 }
 body{
-
+    overflow-x: hidden;
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
