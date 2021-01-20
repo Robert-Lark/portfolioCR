@@ -7,10 +7,10 @@ import FaqSection from "../Components/FaqSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../Animation";
 import ScrollTop from "../Components/ScrollTop";
-import styled from "styled-components";
+
 const AboutUs = () => {
   return (
-    <Container
+    <motion.div
       exit="exit"
       variants={pageAnimation}
       initial="hidden"
@@ -21,15 +21,10 @@ const AboutUs = () => {
       <ProjectsHome/>
       <FaqSection />
       <ScrollTop />
-    </Container>
+    </motion.div>
   );
 };
 
-const Container = styled(motion.div)`
-  @media (max-width: 600px) {
 
-    width: 100vw;
-  }
-`
 
 export default AboutUs;
