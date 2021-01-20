@@ -18,7 +18,7 @@ const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <StyledServices
-      variants={scrollReveal}
+     // variants={scrollReveal}
       animate={controls}
       initial="hidden"
       ref={element}
@@ -82,12 +82,17 @@ display: flex;
 flex-direction: column;
 align-items: center;
 overflow: hidden;
+
   h2 {
     padding-bottom: 5rem;
   }
   @media (min-width: 1400px) {
 text-align: center;
 }
+@media (max-width: 1300px) {
+    justify-content: center;
+ border: 2px solid red;
+  }
 `;
 const StyledCards = styled.div`
   display: grid;
@@ -105,7 +110,8 @@ const StyledCards = styled.div`
  width: 100vw;
  height: 40vh;
  grid-template-columns: 40% 40%;
- grid-template-rows: 20% 20%;
+ grid-template-rows: 60% 60%;
+ margin-bottom: 30%;
   }
   @media (max-width: 900px) {
     grid-template-columns: 100px 100px;
