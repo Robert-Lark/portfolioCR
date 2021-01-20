@@ -18,7 +18,7 @@ const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <StyledServices
-     // variants={scrollReveal}
+      variants={scrollReveal}
       animate={controls}
       initial="hidden"
       ref={element}
@@ -113,7 +113,7 @@ const StyledCards = styled.div`
  grid-template-rows: 60% 60%;
  margin-bottom: 30%;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     grid-template-columns: 100px 100px;
   grid-template-rows: 10px 10px 1fr;
   gap: 150px;
