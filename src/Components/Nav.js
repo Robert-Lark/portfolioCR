@@ -16,7 +16,7 @@ const Nav = () => {
       <ul>
         <li>
           <a href="www.roblark.com">
-            <Link to="/">Home</Link>
+           Home
           </a>
           <StyledLine
             transition={{duration: 0.75}}
@@ -25,7 +25,9 @@ const Nav = () => {
           />
         </li>
         <li>
-          <Link to="/qualifications"> Qualifications</Link>
+        <a href="www.roblark.com/qualifications">
+          Qualifications
+          </a>
           <StyledLine
             transition={{duration: 0.75}}
             initial={{width: "0%"}}
@@ -34,7 +36,7 @@ const Nav = () => {
         </li>
         <li>
           <a href="www.roblark.com/contact">
-            <Link to="/contact">Contact</Link>
+            Contact
           </a>
           <StyledLine
             transition={{duration: 0.75}}

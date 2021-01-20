@@ -1,12 +1,12 @@
 import React from "react";
-import { Switch, Route, useLocation } from "react-router-dom";
+import {Switch, Route, useLocation} from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import GlobalStyle from "./Components/GlobalStyle";
 import Nav from "./Components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 import ContactUs from "./pages/ContactUs";
-import BandcampQual from './pages/BandcampQual'
-import { AnimatePresence } from "framer-motion";
+import BandcampQual from "./pages/BandcampQual";
+import {AnimatePresence} from "framer-motion";
 
 function App() {
   const location = useLocation();
@@ -19,15 +19,16 @@ function App() {
           <Route exact path="/">
             <AboutUs />
           </Route>
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
           <Route path="/qualifications">
             <BandcampQual />
           </Route>
           <Route path="/work/:id">
             <MovieDetail />
           </Route>
-          <Route path="/contact">
-            <ContactUs />
-          </Route>
+        
         </Switch>
       </AnimatePresence>
     </div>
