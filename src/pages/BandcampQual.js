@@ -415,6 +415,7 @@ height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90vw;
     h5 {
       font-size: 2rem;
     }
