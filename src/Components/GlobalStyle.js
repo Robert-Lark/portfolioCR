@@ -16,12 +16,16 @@ html{
     @media (max-width: 1300px){
         font-size: 60%;
     }
+    @media (max-width: 600px) {
+        overflow-x: hidden;
+width: 100vw;
+}
 }
 body{
     overflow-x: hidden;
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
+
 }
 button{
     font-weight: bold;
