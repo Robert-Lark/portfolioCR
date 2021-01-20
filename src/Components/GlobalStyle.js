@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html{
+    max-width: 100%;
+    overflow-x: hidden;
     @media (max-width: 1700px){
         font-size: 80%;
     }
