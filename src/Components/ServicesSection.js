@@ -17,7 +17,7 @@ const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <StyledServices
-      variants={scrollReveal}
+      //variants={scrollReveal}
       animate={controls}
       initial="hidden"
       ref={element}
@@ -76,6 +76,10 @@ const ServicesSection = () => {
 };
 
 const StyledServices = styled(StyledTools)`
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 overflow: hidden;
   h2 {
     padding-bottom: 5rem;
