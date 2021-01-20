@@ -99,10 +99,12 @@ const StyledCards = styled.div`
     grid-template-columns: 280px 280px 280px 280px;
   grid-template-rows: 40px 1fr;
   gap: 150px;
+  border: 4px solid blue;
   }
   @media (max-width: 1300px) {
     justify-content: center;
-    border: 4px solid red;
+ width: 100vw;
+ height: 40vh;
   }
   @media (max-width: 900px) {
     grid-template-columns: 100px 100px;
