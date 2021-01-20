@@ -109,7 +109,7 @@ const StyledCards = styled.div`
  width: 100vw;
  height: 40vh;
  grid-template-columns: 40% 40%;
- grid-template-rows: 40% 40%;
+ grid-template-rows: 45% 45%;
 gap: 20%;
   }
   @media (max-width: 1000px) {

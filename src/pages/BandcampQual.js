@@ -198,12 +198,10 @@ const BandcampQual = () => {
           <Info>
             <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-                aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-                ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-                saepe vel odit ipsa dolor corporis accusamus architecto rerum
-                voluptas laboriosam, ipsum, facilis soluta id voluptatem.
+                One of my styling libraries to work with this extensive course
+                taught me the ins and outs of Material UI. Using it's features
+                to create both mobile and desktop first projects it is a library
+                I draw on alot when working.
               </h5>
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
