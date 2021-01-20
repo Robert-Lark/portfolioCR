@@ -369,6 +369,11 @@ const StyledWork = styled.div`
   @media (max-width: 1300px) {
     padding: 2rem 2rem;
   }
+  @media (max-width: 900px) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
   @media (max-width: 600px) {
     height: 100%;
   }
@@ -402,9 +407,12 @@ const CoursesGrid = styled.div`
   @media (max-width: 900px) {
     width: 80vw;
     height: 90%;
-    grid-template-columns: 35rem 35rem;
+    grid-template-columns: 80vw;
     grid-gap: 70px;
     grid-auto-rows: 150px 10px 200px;
+   div{
+    width: 80vw;
+   }
     h5 {
       font-size: 2rem;
     }
