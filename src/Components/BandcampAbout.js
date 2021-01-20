@@ -88,10 +88,7 @@ const StyledContainer = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  @media (max-width: 500) {
-    p {
-      border: 5px solid red;
-    }
+  @media (max-width: 500px) {
   }
 `;
 const StyledLogoContainer = styled.div`
