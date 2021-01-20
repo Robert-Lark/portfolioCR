@@ -14,8 +14,7 @@ export const StyledAbout = styled(motion.div)`
     text-align: center;
   }
   @media (max-width: 600px) {
-
-overflow-y: hidden;
+    min-height: 100vh;
   }
 `;
 
