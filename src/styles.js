@@ -57,4 +57,9 @@ export const StyledImage = styled.div`
 `;
 export const StyledHide = styled.div`
   overflow: hidden;
+  @media (max-width: 600px) {
+    p{
+      font-size: 1rem;
+    }
+  }
 `;
