@@ -95,17 +95,17 @@ const StyledCards = styled.div`
   grid-template-rows: 10px 1fr;
   gap: 150px;
   @media (min-width: 1400px) {
-
-    grid-template-columns: 280px 280px 280px 280px;
+    justify-content: center;
+    grid-template-columns: 10% 10% 10% 10%;
   grid-template-rows: 40px 1fr;
   gap: 150px;
-  border: 4px solid blue;
   }
   @media (max-width: 1300px) {
     justify-content: center;
  width: 100vw;
  height: 40vh;
  grid-template-columns: 40% 40%;
+ grid-template-rows: 20% 20%;
   }
   @media (max-width: 900px) {
     grid-template-columns: 100px 100px;
