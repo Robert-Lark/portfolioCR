@@ -84,10 +84,11 @@ const BandcampQual = () => {
           <Info>
             <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                I graduate from Lambda's eighteen month Full Stack Web
-                Development program at the end of March. With a heavy focus on
-                teamwork and leadership skills Lambda has provided me a strong
-                foundation for entering the web dev workforce.
+                I really enjoy working within the React framework. This full
+                spectrum course only increased my enthisiasm. Taught by the
+                inimitable Wes Bos it showed me how to create a full online
+                presence from scratch using some very complex packages and
+                tools.
               </h5>
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
