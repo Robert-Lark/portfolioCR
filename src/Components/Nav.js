@@ -15,7 +15,7 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <a href="www.roblark.com">
+          <a href="/">
            Home
           </a>
           <StyledLine
@@ -25,7 +25,7 @@ const Nav = () => {
           />
         </li>
         <li>
-        <a href="www.roblark.com/qualifications">
+        <a href="/qualifications">
           Qualifications
           </a>
           <StyledLine
@@ -35,7 +35,7 @@ const Nav = () => {
           />
         </li>
         <li>
-          <a href="www.roblark.com/contact">
+          <a href="/contact">
             Contact
           </a>
           <StyledLine
