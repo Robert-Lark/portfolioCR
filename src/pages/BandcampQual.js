@@ -385,6 +385,9 @@ const StyledWork = styled.div`
 const Line = styled.div`
   border-top: 2px solid black;
   height: 1px;
+  @media (max-width: 1400px) {
+    display: none;
+  }
   @media (max-width: 900px) {
     display: none;
   }
