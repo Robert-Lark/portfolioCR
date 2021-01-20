@@ -15,7 +15,9 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <a href="www.roblark.com">
+            <Link to="/">Home</Link>
+          </a>
           <StyledLine
             transition={{duration: 0.75}}
             initial={{width: "0%"}}
@@ -30,14 +32,16 @@ const Nav = () => {
             animate={{width: pathname === "/qualifications" ? "100%" : "0%"}}
           />
         </li>
-        {/* <li>
-          <Link to="/contact">Contact</Link>
+        <li>
+          <a href="www.roblark.com/contact">
+            <Link to="/contact">Contact</Link>
+          </a>
           <StyledLine
             transition={{duration: 0.75}}
             initial={{width: "0%"}}
             animate={{width: pathname === "/contact" ? "100%" : "0%"}}
           />
-        </li> */}
+        </li>
       </ul>
     </StyledNav>
   );
@@ -93,10 +97,8 @@ const StyledNav = styled.nav`
   }
   @media (max-width: 600px) {
     //overflow: hidden;
- margin-left: 0px;
-
- 
-}
+    margin-left: 0px;
+  }
 `;
 const StyledLine = styled(motion.div)`
   height: 0.3rem;
