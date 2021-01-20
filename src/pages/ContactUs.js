@@ -43,6 +43,9 @@ const ContactUs = () => {
           <Social variants={titleAnimation}>
             <div className="list">
               <ul>
+              <a href="https://github.com/Robert-Lark">
+                  <li>Github</li>
+                </a>
                 <a href="https://www.instagram.com/burntskies25/">
                   <li>Instagram Personal</li>
                 </a>

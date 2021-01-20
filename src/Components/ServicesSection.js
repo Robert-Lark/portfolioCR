@@ -110,8 +110,8 @@ const StyledCards = styled.div`
  width: 100vw;
  height: 40vh;
  grid-template-columns: 40% 40%;
- grid-template-rows: 60% 60%;
- margin-bottom: 30%;
+ grid-template-rows: 20% 20%;
+gap: 20%;
   }
   @media (max-width: 1000px) {
     grid-template-columns: 100px 100px;
