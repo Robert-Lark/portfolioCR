@@ -92,7 +92,7 @@ const StyledNav = styled.nav`
     }
   }
   @media (max-width: 600px) {
-    overflow: hidden;
+    //overflow: hidden;
  margin-left: 0px;
 
  

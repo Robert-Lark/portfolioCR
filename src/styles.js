@@ -13,9 +13,7 @@ export const StyledAbout = styled(motion.div)`
     padding: 2rem 2rem;
     text-align: center;
   }
-  @media (max-width: 600px) {
-    min-height: 100vh;
-  }
+
 `;
 
 export const StyledTools = styled(motion.div)`
