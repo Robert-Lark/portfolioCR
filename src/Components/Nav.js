@@ -30,14 +30,14 @@ const Nav = () => {
             animate={{width: pathname === "/qualifications" ? "100%" : "0%"}}
           />
         </li>
-        <li>
+        {/* <li>
           <Link to="/contact">Contact</Link>
           <StyledLine
             transition={{duration: 0.75}}
             initial={{width: "0%"}}
             animate={{width: pathname === "/contact" ? "100%" : "0%"}}
           />
-        </li>
+        </li> */}
       </ul>
     </StyledNav>
   );

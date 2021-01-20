@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 //import AboutSection from "../Components/AboutSection";
 import BandcampAboutSection from "../Components/BandcampAbout";
 import ServicesSection from "../Components/ServicesSection";
@@ -9,6 +9,9 @@ import { pageAnimation } from "../Animation";
 import ScrollTop from "../Components/ScrollTop";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <motion.div
       exit="exit"
