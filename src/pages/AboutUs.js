@@ -1,6 +1,8 @@
 import React from "react";
-import AboutSection from "../Components/AboutSection";
+//import AboutSection from "../Components/AboutSection";
+import BandcampAboutSection from "../Components/BandcampAbout";
 import ServicesSection from "../Components/ServicesSection";
+import ProjectsHome from "../Components/ProjectsHome";
 import FaqSection from "../Components/FaqSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../Animation";
@@ -14,8 +16,9 @@ const AboutUs = () => {
       initial="hidden"
       animate="show"
     >
-      <AboutSection />
+      <BandcampAboutSection />
       <ServicesSection />
+      <ProjectsHome/>
       <FaqSection />
       <ScrollTop />
     </motion.div>

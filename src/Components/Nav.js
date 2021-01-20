@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
-
+import {Link} from "react-router-dom";
+import {motion} from "framer-motion";
+import {useLocation} from "react-router-dom";
 
 const Nav = () => {
-  const { pathname } = useLocation();
+  const {pathname} = useLocation();
   return (
     <StyledNav>
       <h1>
@@ -16,27 +15,27 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">Projects</Link>
+          <Link to="/">Home</Link>
           <StyledLine
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "100%" : "0%" }}
+            transition={{duration: 0.75}}
+            initial={{width: "0%"}}
+            animate={{width: pathname === "/" ? "100%" : "0%"}}
           />
         </li>
         <li>
           <Link to="/qualifications"> Qualifications</Link>
           <StyledLine
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/qualifications" ? "100%" : "0%"}}
+            transition={{duration: 0.75}}
+            initial={{width: "0%"}}
+            animate={{width: pathname === "/qualifications" ? "100%" : "0%"}}
           />
         </li>
         <li>
           <Link to="/contact">Contact</Link>
           <StyledLine
-            transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "100%" : "0%" }}
+            transition={{duration: 0.75}}
+            initial={{width: "0%"}}
+            animate={{width: pathname === "/contact" ? "100%" : "0%"}}
           />
         </li>
       </ul>
@@ -71,13 +70,17 @@ const StyledNav = styled.nav`
   li {
     padding-left: 10rem;
     position: relative;
-    
+    font-size: 2rem;
+    @media (max-width: 470px) {
+      font-size: 1rem;
+      margin: 0 20%;
+    }
   }
+
   @media (max-width: 1300px) {
     flex-direction: column;
     #logo {
       display: inline-block;
-      
     }
     ul {
       padding: 2rem;
@@ -88,6 +91,12 @@ const StyledNav = styled.nav`
       }
     }
   }
+  @media (max-width: 600px) {
+    overflow: hidden;
+ margin-left: 0px;
+
+ 
+}
 `;
 const StyledLine = styled(motion.div)`
   height: 0.3rem;
@@ -97,13 +106,12 @@ const StyledLine = styled(motion.div)`
   bottom: -80%;
   left: 60%;
   @media (max-width: 1300px) {
-  height: 0.3rem;
-  background: #23d997;
-  width: 0%;
-  position: absolute;
-  bottom: -80%;
-  left: 0%;
+    height: 0.3rem;
+    background: #23d997;
+    width: 0%;
+    position: absolute;
+    bottom: -80%;
+    left: 0%;
   }
-    
 `;
 export default Nav;

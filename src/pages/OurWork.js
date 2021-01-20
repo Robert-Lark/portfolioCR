@@ -628,75 +628,7 @@ const TitleDiv = styled(motion.div)`
   grid-row: 1 / span 1;
   @media (max-width: 700px) {
     font-size: 2rem;
-
   }
-  @media (max-width: 1350px) {
-    border: 2px solid brown;
-  }
-  @media (max-width: 1300px) {
-    border: 2px solid coral;
-  }
-  @media (max-width: 1250px) {
-    border: 2px solid cyan;
-  }
-  @media (max-width: 1200px) {
-    border: 2px solid gold;
-  }
-  @media (max-width: 1150px) {
-    border: 2px solid red;
-  }
-  @media (max-width: 1100px) {
-    border: 2px solid blue;
-  }
-  @media (max-width: 1050px) {
-    border: 2px solid green;
-  }
-  @media (max-width: 1000px) {
-    border: 2px solid yellow;
-  }
-  @media (max-width: 950px) {
-    border: 2px solid pink;
-  }
-  @media (max-width: 900px) {
-    border: 2px solid purple;
-  }
-
-  ///SMALLER THEN PRO
-  @media (max-width: 850px) {
-    border: 2px solid brown;
-  }
-  @media (max-width: 800px) {
-    border: 2px solid coral;
-  }
-  @media (max-width: 750px) {
-    border: 2px solid cyan;
-  }
-
-  @media (max-width: 700px) {
-    border: 2px solid gold;
-  }
-  @media (max-width: 650px) {
-    border: 2px solid red;
-  }
-  @media (max-width: 600px) {
-    border: 2px solid blue;
-  }
-  @media (max-width: 550px) {
-    border: 2px solid green;
-  }
-  @media (max-width: 500px) {
-    border: 2px solid yellow;
-  }
-  @media (max-width: 450px) {
-    border: 2px solid pink;
-  }
-  @media (max-width: 400px) {
-    border: 2px solid purple;
-  }
-  @media (max-width: 350px) {
-    border: 2px solid grey;
-  }
-
 `;
 const TitleInfoDiv = styled(motion.div)`
   h2 {

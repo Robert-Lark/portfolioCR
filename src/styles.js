@@ -14,6 +14,21 @@ export const StyledAbout = styled(motion.div)`
     text-align: center;
   }
 `;
+
+export const StyledTools = styled(motion.div)`
+  min-height: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+  @media (max-width: 1300px) {
+    display: block;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+`;
+
 export const StyledDescription = styled.div`
   flex: 1;
   padding-right: 5rem;

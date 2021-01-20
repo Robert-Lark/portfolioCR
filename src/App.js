@@ -5,7 +5,7 @@ import GlobalStyle from "./Components/GlobalStyle";
 import Nav from "./Components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 import ContactUs from "./pages/ContactUs";
-import OurWork from "./pages/OurWork";
+import BandcampQual from './pages/BandcampQual'
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <AboutUs />
           </Route>
           <Route exact path="/qualifications">
-            <OurWork />
+            <BandcampQual />
           </Route>
           <Route path="/work/:id">
             <MovieDetail />

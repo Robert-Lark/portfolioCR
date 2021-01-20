@@ -1,21 +1,23 @@
 import React from "react";
 //Import Icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import sass from "../img/Tools/sass.svg";
+import motion from "../img/Tools/motion.png";
+import styledC from "../img/Tools/styledcomponents1.png";
+import material from "../img/Tools/material_ui.png";
+import grid from "../img/Tools/grid.jpeg";
+import blisk from "../img/Tools/Blisk.jpg";
+import greensock from "../img/Tools/greensock.png";
 //Styles
-import { StyledAbout, StyledDescription, StyledImage } from "../styles";
+import {StyledTools, StyledDescription} from "../styles";
 import styled from "styled-components";
-import { scrollReveal } from "../Animation";
-import { useScroll } from "./useScroll";
+import {scrollReveal} from "../Animation";
+import {useScroll} from "./useScroll";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <StyledServices
-      variants={scrollReveal}
+      //variants={scrollReveal}
       animate={controls}
       initial="hidden"
       ref={element}
@@ -27,62 +29,88 @@ const ServicesSection = () => {
         <StyledCards>
           <StyledCard>
             <div className="icon">
-              <img alt="icon" src={clock} />
-              <h3>Front End</h3>
+              <img alt="icon" src={sass} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img alt="icon" src={teamwork} />
-              <h3>Teamwork</h3>
+              <img alt="icon" src={material} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img alt="icon" src={diaphragm} />
-              <h3>Diaphragm</h3>
+              <img alt="icon" src={motion} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
           </StyledCard>
           <StyledCard>
             <div className="icon">
-              <img alt="icon" src={money} />
-              <h3>Affordable</h3>
+              <img alt="icon" src={greensock} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+          </StyledCard>
+        </StyledCards>
+        <StyledCards>
+          <StyledCard>
+            <div className="icon">
+              <img alt="icon" src={styledC} />
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <img alt="icon" src={grid} />
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <img alt="icon" src={greensock} />
+            </div>
+          </StyledCard>
+          <StyledCard>
+            <div className="icon">
+              <img alt="icon" src={blisk} />
+            </div>
           </StyledCard>
         </StyledCards>
       </StyledDescription>
-      <StyledImage>
-        <img alt="camera" src={home2} />
-      </StyledImage>
     </StyledServices>
   );
 };
 
-const StyledServices = styled(StyledAbout)`
+const StyledServices = styled(StyledTools)`
+overflow: hidden;
   h2 {
     padding-bottom: 5rem;
   }
-  p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
-  }
+  @media (min-width: 1400px) {
+text-align: center;
+}
 `;
 const StyledCards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 10px 1fr;
+  gap: 150px;
+  @media (min-width: 1400px) {
+
+    grid-template-columns: 280px 280px 280px 280px;
+  grid-template-rows: 40px 1fr;
+  gap: 150px;
+  }
   @media (max-width: 1300px) {
     justify-content: center;
   }
 `;
 const StyledCard = styled.div`
-  flex-basis: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .icon {
-    display: flex;
-    align-items: center;
+    img {
+      float: left;
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
     h3 {
       margin-left: 1rem;
       background: white;
