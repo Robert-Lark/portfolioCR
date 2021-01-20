@@ -198,26 +198,26 @@ const BandcampQual = () => {
           <Info>
             <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                One of my styling libraries to work with this extensive course
-                taught me the ins and outs of Material UI. Using it's features
-                to create both mobile and desktop first projects it is a library
-                I draw on alot when working.
+                One of my favorite styling libraries to work with, this
+                extensive course taught me the ins and outs of Material UI.
+                Using it's features to create both mobile and desktop first
+                projects it is a library I draw on alot when working.
               </h5>
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
               <ul style={{paddingRight: "40px"}}>
-                <li>GraphQL Schema</li>
-                <li>Queries and Mutations</li>
-                <li>Resolvers</li>
-                <li>Cache Management</li>
-                <li>Sending Email</li>
+                <li>Image Optimization</li>
+                <li>Styling Themes</li>
+                <li>Using Tabs</li>
+                <li>Using Menus</li>
+                <li>Responsive Design</li>
               </ul>
               <ul>
-                <li>Charging Credit Cards</li>
-                <li>Pagination</li>
-                <li>Forms in React</li>
-                <li>Unit Testing</li>
-                <li>Mounting vs Shallow Rendering</li>
+                <li>Using Drawers</li>
+                <li>Using Lists</li>
+                <li>Using Grids</li>
+                <li>Animation Configuration</li>
+                <li>Testing</li>
               </ul>
             </div>
           </Info>
@@ -236,28 +236,26 @@ const BandcampQual = () => {
           <Info>
             <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-                aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-                ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-                saepe vel odit ipsa dolor corporis accusamus architecto rerum
-                voluptas laboriosam, ipsum, facilis soluta id voluptatem.
+                This 28 hour course covered all there is to know about css
+                compilers and Sass. I had alot of fun working with the various
+                tools that Sass provides and have used the skills I learned in
+                the course in every projects since completion.
               </h5>
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
               <ul style={{paddingRight: "40px"}}>
-                <li>GraphQL Schema</li>
-                <li>Queries and Mutations</li>
-                <li>Resolvers</li>
-                <li>Cache Management</li>
-                <li>Sending Email</li>
+                <li>Compilers</li>
+                <li>Media Queries</li>
+                <li>Global Styles</li>
+                <li>Resets</li>
+                <li>Animation Libraries</li>
               </ul>
               <ul>
-                <li>Charging Credit Cards</li>
-                <li>Pagination</li>
-                <li>Forms in React</li>
-                <li>Unit Testing</li>
-                <li>Mounting vs Shallow Rendering</li>
+                <li>Functional Styling</li>
+                <li>Flexbox</li>
+                <li>NPM for Styling</li>
+                <li>Tracks</li>
+                <li>Viewports</li>
               </ul>
             </div>
           </Info>
@@ -276,28 +274,26 @@ const BandcampQual = () => {
           <Info>
             <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-                aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-                ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-                saepe vel odit ipsa dolor corporis accusamus architecto rerum
-                voluptas laboriosam, ipsum, facilis soluta id voluptatem.
+                This amazing course taught by the one and only Dev Ed showed me
+                how to combine beautiful javascript functions as JSX with
+                creative css and animation using Framer Motion and Styled
+                Components.
               </h5>
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
               <ul style={{paddingRight: "40px"}}>
-                <li>GraphQL Schema</li>
-                <li>Queries and Mutations</li>
-                <li>Resolvers</li>
-                <li>Cache Management</li>
-                <li>Sending Email</li>
+                <li>Styled Components</li>
+                <li>Framer Motion</li>
+                <li>Typographic Design</li>
+                <li>Color Theory</li>
+                <li>Modals</li>
               </ul>
               <ul>
-                <li>Charging Credit Cards</li>
-                <li>Pagination</li>
-                <li>Forms in React</li>
-                <li>Unit Testing</li>
-                <li>Mounting vs Shallow Rendering</li>
+                <li>Lazy Loading</li>
+                <li>Image Optimization</li>
+                <li>Displaying API Data</li>
+                <li>Figma</li>
+                <li>Layout Design</li>
               </ul>
             </div>
           </Info>
@@ -317,28 +313,26 @@ const BandcampQual = () => {
           <Info>
             <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                INFO ON THE PROGRAM : Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dignissimos rerum magnam quod sed aliquid
-                aperiam optio ex quo quaerat quia? Repellendus nemo velit minima
-                ipsa labore vitae ipsum! Debitis possimus nisi, eaque fugit rem
-                saepe vel odit ipsa dolor corporis accusamus architecto rerum
-                voluptas laboriosam, ipsum, facilis soluta id voluptatem.
+                This firefox sponsored course taught me all about the exciting
+                new way of rending content. Relying heavily on the Firefox
+                dev-tools it has given me the confidence to quickly and easily
+                render data to a page in an aesthically pleasing way.
               </h5>
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
               <ul style={{paddingRight: "40px"}}>
-                <li>GraphQL Schema</li>
-                <li>Queries and Mutations</li>
-                <li>Resolvers</li>
-                <li>Cache Management</li>
-                <li>Sending Email</li>
+                <li>Firefox Dev-tools</li>
+                <li>Units of Measurement</li>
+                <li>Template Columns & Rows</li>
+                <li>Max-fill / Max-Fit</li>
+                <li>FR units</li>
               </ul>
               <ul>
-                <li>Charging Credit Cards</li>
-                <li>Pagination</li>
-                <li>Forms in React</li>
-                <li>Unit Testing</li>
-                <li>Mounting vs Shallow Rendering</li>
+                <li>Minmax</li>
+                <li>Repeat Functions</li>
+                <li>CSS Variables</li>
+                <li>Naming Lines</li>
+                <li>Implicit and Explicit Tracks</li>
               </ul>
             </div>
           </Info>
