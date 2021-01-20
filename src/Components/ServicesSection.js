@@ -154,8 +154,9 @@ const StyledCard = styled.div`
       height: 100px;
       object-fit: cover;
       border-radius: 20px;
-      margin: 100px;
+      margin: 10px;
   }
+    }
     @media (max-width: 600px) {
       img {
       float: left;

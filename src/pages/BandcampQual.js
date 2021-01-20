@@ -168,7 +168,7 @@ const BandcampQual = () => {
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
               <ul style={{paddingRight: "40px"}}>
-                <li>Call Stacks, Callback Queues, and the Event Loop</li>
+                <li>Destructuring</li>
                 <li>Making/Customizing HTTP Requests</li>
                 <li>Handling Errors</li>
                 <li>Static Assets</li>
