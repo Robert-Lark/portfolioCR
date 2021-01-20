@@ -168,18 +168,18 @@ const BandcampQual = () => {
             </div>
             <div style={{display: "flex", flexDirection: "row"}}>
               <ul style={{paddingRight: "40px"}}>
-                <li>Destructuring</li>
-                <li>Making/Customizing HTTP Requests</li>
-                <li>Handling Errors</li>
-                <li>Static Assets</li>
-                <li>Dynamic Pages with Templating</li>
+                <li>Sets</li>
+                <li>Async + Await</li>
+                <li>Array .some() and .every()</li>
+                <li>The ...rest param</li>
+                <li>Object Literal Upgrades</li>
               </ul>
               <ul>
-                <li>The Query String</li>
-                <li>SSH Keys</li>
-                <li>MongoDB and NoSQL Databases</li>
-                <li>REST APIs and Mongoose</li>
-                <li>Securely Storing Passwords</li>
+                <li>Chaining Promises + Flow Control</li>
+                <li>ESLint</li>
+                <li>JavaScript Modules</li>
+                <li>Polyfilling ES6 for Older Browsers</li>
+                <li>Proxies</li>
               </ul>
             </div>
           </Info>
