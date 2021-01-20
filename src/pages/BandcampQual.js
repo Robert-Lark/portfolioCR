@@ -36,7 +36,7 @@ const BandcampQual = () => {
         <h1>QUALIFICATIONS</h1>
       </TitleDiv>
       <TitleInfoDiv>
-        <h2 variants={fade}>
+        <h2 variants={fade} style={{textAlign: "center"}}>
           Here you can find information about my education and the
           qualifications and endorsements I have recieved.
         </h2>
