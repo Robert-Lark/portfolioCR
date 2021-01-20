@@ -393,6 +393,12 @@ const CoursesGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   grid-gap: 20px;
   grid-auto-rows: 400px 20px 100px;
+  @media (min-width: 1600px) {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: 400px 20px 300px;
+}
   @media (max-width: 900px) {
     width: 80vw;
     height: 90%;
@@ -475,12 +481,16 @@ const Logo = styled.div`
   align-items: center;
   justify-content: center;
   img {
+    width: 45vw;
     position: absolute;
     max-width: 75%;
     border-radius: 10%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media (min-width: 1400px) {
+    width: 45vw;
+  }
   }
   @media (max-width: 900px) {
     width: 45vw;
