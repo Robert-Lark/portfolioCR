@@ -191,6 +191,7 @@ const Test = () => {
 };
 
 const StyledWork = styled.div`
+height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -225,7 +226,7 @@ const CoursesGrid = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   @media (max-width: 600px) {
-    height: 100vh;
+    height: 85vh;
     }
 `;
 
