@@ -57,7 +57,10 @@ const BandcampQual = () => {
                 foundation for entering the web dev workforce.
               </h5>
             </div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div
+              style={{display: "flex", flexDirection: "row"}}
+              className="lambda"
+            >
               <ul style={{paddingRight: "40px"}}>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -268,6 +271,7 @@ const BandcampQual = () => {
             animate={controls3}
             initial="hidden"
             ref={element3}
+            className="move-up"
           >
             <LogoImg src={creativeReactLogo} alt="creativeReactLogo" />
           </Logo>
@@ -307,6 +311,7 @@ const BandcampQual = () => {
             animate={controls4}
             initial="hidden"
             ref={element4}
+            className="move-up"
           >
             <LogoImg src={cssGrid} alt="cssGridLogo" />
           </Logo>
@@ -359,6 +364,9 @@ const StyledWork = styled.div`
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 600px) {
+      margin-left: 45px;
+    }
   }
   li {
     font-size: 1.5rem;
@@ -370,9 +378,9 @@ const StyledWork = styled.div`
     padding: 2rem 2rem;
   }
   @media (max-width: 900px) {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   @media (max-width: 600px) {
     height: 100%;
@@ -403,19 +411,19 @@ const CoursesGrid = styled.div`
   grid-auto-rows: 400px 20px 100px;
   @media (min-width: 1600px) {
     display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-  grid-gap: 20px;
-  grid-auto-rows: 400px 20px 300px;
-}
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: 400px 20px 300px;
+  }
   @media (max-width: 900px) {
     width: 80vw;
     height: 90%;
     grid-template-columns: 80vw;
     grid-gap: 70px;
     grid-auto-rows: 150px 10px 200px;
-   div{
-    width: 80vw;
-   }
+    div {
+      width: 80vw;
+    }
     h5 {
       font-size: 2rem;
     }
@@ -442,6 +450,12 @@ const IQGrid = styled.div`
   grid-gap: 1rem;
   @media (max-width: 900px) {
     grid-gap: 2rem;
+  }
+  @media (max-width: 600px) {
+    .move-up {
+      height: 20rem;
+      margin-top: -100px;
+    }
   }
 `;
 
@@ -500,14 +514,15 @@ const Logo = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     @media (min-width: 1400px) {
-    width: 45vw;
-  }
+      width: 45vw;
+    }
   }
   @media (max-width: 900px) {
     width: 45vw;
   }
   @media (max-width: 470px) {
     width: 30rem;
+    height: 10rem;
   }
 `;
 const Info = styled.div`
@@ -515,6 +530,20 @@ const Info = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .lambda {
+    @media (max-width: 600px) {
+      
+      ul {
+        margin-left: 80px;
+      }
+    }
+    @media (max-width: 400px) {
+      
+      ul {
+        margin-left: 50px;
+      }
+    }
+  }
   @media (max-width: 900px) {
     width: 45vw;
 
