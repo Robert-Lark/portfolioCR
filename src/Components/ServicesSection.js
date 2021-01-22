@@ -49,6 +49,7 @@ const ServicesSection = () => {
             </div>
           </StyledCard>
         </StyledCards>
+        <Gap></Gap>
         <StyledCards>
           <StyledCard>
             <div className="icon">
@@ -125,10 +126,15 @@ gap: 20%;
   }
   @media (max-width: 400px) {
     grid-template-columns: 10px 10px;
-  grid-template-rows: 5px 1fr;
+  grid-template-rows: 10px 10px 1fr;
   gap: 150px;
   }
 `;
+const Gap =styled.div`
+@media (max-width: 400px) {
+height: 10rem;
+  }
+`
 const StyledCard = styled.div`
   display: flex;
   flex-direction: column;

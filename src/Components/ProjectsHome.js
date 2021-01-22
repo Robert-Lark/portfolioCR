@@ -62,8 +62,8 @@ const Projects = () => {
         <h2>Quiet Calm Records</h2>
         <h3>
           Quiet Calm Records is the home of the small mail-order Record Store I
-          run as a hobby in my spare time. The site makes use of Responsive
-          design techniques and allows the user to learn about and purchase hard
+          run as a hobby in my spare time. The site makes use of responsive
+          design techniques allowing the user to learn about and purchase hard
           to find vinyl and cds from my favorite artists and record labels.
         </h3>
         <StyledCards
@@ -93,7 +93,7 @@ const Projects = () => {
       <StyledTitle>
         <h2>Top Ten Albums Of 2020</h2>
         <h3>
-          Using CSS Grid Top Ten Albums of 2020 catalogues my favorite albums of
+          Using CSS Grid, Top Ten Albums of 2020 catalogues my favorite albums of
           the last year. This single-page-application makes use of Gatsby on the
           front-end and features a modal pop-out design.
         </h3>
@@ -122,8 +122,8 @@ const Projects = () => {
         <h2>Sonic Architecture</h2>
         <h3>
           Hooking into the Discogs API this site displays information on my
-          favorite record labels as well as a feed music related content I
-          discover. It makes heavy use of Redux and framer-motion. This site was
+          favorite record labels as well as a feed of music related content I
+          discover. It makes heavy use of Redux and Framer-Motion. This site was
           designed with a Mobile-first approach of responsive design and is
           optimized to look great on every screen size.
         </h3>
