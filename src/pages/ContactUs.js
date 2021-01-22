@@ -77,7 +77,7 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
         font-size: 2rem;
             }
   @media (max-width: 1500) {
@@ -94,7 +94,7 @@ const Container = styled.div`
     width: 90vw;
 h2{
   font-size: 3rem;
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
         font-size: 2rem;
             }
 }
@@ -109,13 +109,13 @@ h2{
 const Title = styled.div`
   margin-bottom: 4rem;
   color: black;
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
         font-size: 2rem;
             }
   @media (max-width: 1500) {
     margin-top: 5rem;
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
         font-size: 2rem;
             }
   @media (max-width: 600px) {
@@ -124,7 +124,7 @@ const Title = styled.div`
 `;
 const Hide = styled.div`
   overflow: hidden;
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
         font-size: 2rem;
             }
 `;
@@ -141,7 +141,7 @@ const Social = styled(motion.div)`
   h2 {
     margin: 2rem;
     color: black;
-    @media (min-width: 1400px) {
+    @media (min-width:21400px) {
         font-size: 2rem;
             }
   }
@@ -163,7 +163,7 @@ const Social = styled(motion.div)`
       font-weight: lighter;
       text-decoration: none;
       color: black;
-            @media (min-width: 1400px) {
+            @media (mi2-width: 1400px) {
         font-size: 2rem;
             }
       @media (max-width: 470px) {

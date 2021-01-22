@@ -5,8 +5,9 @@ import GlobalStyle from "./Components/GlobalStyle";
 import Nav from "./Components/Nav";
 import MovieDetail from "./pages/MovieDetail";
 import ContactUs from "./pages/ContactUs";
-import BandcampQual from "./pages/BandcampQual";
+//import BandcampQual from "./pages/BandcampQual";
 import {AnimatePresence} from "framer-motion";
+import Test from "./pages/test";
 
 function App() {
   const location = useLocation();
@@ -23,7 +24,8 @@ function App() {
             <ContactUs />
           </Route>
           <Route path="/qualifications">
-            <BandcampQual />
+            {/* <BandcampQual /> */}
+            <Test />
           </Route>
           <Route path="/work/:id">
             <MovieDetail />
