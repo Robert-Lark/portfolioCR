@@ -367,10 +367,7 @@ const StyledWork = styled.div`
     @media (max-width: 600px) {
       margin-left: 45px;
     }
-    @media (orientation: landscape) and (max-width: 600px) {
-      margin-left: 145px;
-      //border: 4px solid red;
-}
+    
 
   }
   li {
