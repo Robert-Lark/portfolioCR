@@ -325,7 +325,7 @@ const BandcampQual = () => {
                 render data to a page in an aesthically pleasing way.
               </h5>
             </div>
-            <div style={{display: "flex", flexDirection: "row"}}>
+            <div style={{display: "flex", flexDirection: "row"}}  className="bottom">
               <ul style={{paddingRight: "40px"}}>
                 <li>Firefox Dev-tools</li>
                 <li>Units of Measurement</li>
@@ -367,7 +367,7 @@ const StyledWork = styled.div`
     @media (max-width: 600px) {
       margin-left: 45px;
     }
-    @media (orientation: landscape) and (max-width: 500px) {
+    @media (orientation: landscape) and (max-width: 600px) {
       margin-left: 45px;
 }
 
@@ -535,6 +535,10 @@ const Info = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .bottom{
+    @media (max-width: 600px) {
+      margin-bottom: 50px;
+  }
   .lambda {
     @media (max-width: 600px) {
       
