@@ -175,7 +175,7 @@ const Test = () => {
               <h3>{data.info}</h3>
             </Info>
             <List>
-              <h2>I Learnt</h2>
+              <h2>I Learned</h2>
               {data.li.map((listItem) => (
                 <ul>
                   <li key={listItem}>{listItem}</li>
@@ -226,7 +226,7 @@ const CoursesGrid = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   @media (max-width: 600px) {
-    height: 85vh;
+    height: 100vh;
     }
 `;
 
