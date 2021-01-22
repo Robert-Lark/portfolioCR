@@ -368,7 +368,8 @@ const StyledWork = styled.div`
       margin-left: 45px;
     }
     @media (orientation: landscape) and (max-width: 600px) {
-      margin-left: 45px;
+      margin-left: 145px;
+      //border: 4px solid red;
 }
 
   }
@@ -536,7 +537,7 @@ const Info = styled.div`
   align-items: center;
   justify-content: center;
   .bottom{
-    @media (max-width: 600px) {
+    @media (orientation: landscape), (max-width:600px) {
       margin-bottom: 50px;
   }
   .lambda {
