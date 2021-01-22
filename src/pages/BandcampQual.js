@@ -367,6 +367,10 @@ const StyledWork = styled.div`
     @media (max-width: 600px) {
       margin-left: 45px;
     }
+    @media (orientation: landscape) and (max-width: 500px) {
+      margin-left: 45px;
+}
+
   }
   li {
     font-size: 1.5rem;
