@@ -218,7 +218,7 @@ const TitleInfoDiv = styled.div`
 `;
 
 const CoursesGrid = styled.div`
-  height: 75vh;
+  height: 100vh;
   padding: 1rem;
   display: grid;
   align-items: center;
