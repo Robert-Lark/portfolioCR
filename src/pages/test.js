@@ -218,16 +218,17 @@ const TitleInfoDiv = styled.div`
 `;
 
 const CoursesGrid = styled.div`
+
   height: 100vh;
   padding: 1rem;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  @media (max-width: 600px) {
-    height: 100vh;
-    }
+  grid-template-rows:  minmax(0, 1fr 1fr);
+    @media (min-height: 930px) {
+    height: 65vh;
+ }
 `;
 
 const Logo = styled.div`
@@ -280,6 +281,7 @@ const Line = styled.div`
   border-top: 2px solid black;
   height: 1px;
   width: 80vw;
+
 `;
 
 export default Test;
