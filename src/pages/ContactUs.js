@@ -144,6 +144,9 @@ const Social = styled(motion.div)`
       font-weight: lighter;
       text-decoration: none;
       color: black;
+            @media (min-width: 1400px) {
+        font-size: 2rem;
+            }
       @media (max-width: 470px) {
         font-size: 2rem;
   }

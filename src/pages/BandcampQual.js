@@ -132,15 +132,15 @@ const BandcampQual = () => {
                 covered included but were not limited to:
               </h5>
             </div>
-            <div style={{display: "flex", flexDirection: "row"}}>
-              <ul style={{paddingRight: "40px"}}>
+            <div style={{display: "flex", flexDirection: "row"}} className='node'>
+              <ul style={{paddingRight: "40px"}} >
                 <li>Call Stacks, Callback Queues, and the Event Loop</li>
                 <li>Making/Customizing HTTP Requests</li>
                 <li>Handling Errors</li>
                 <li>Static Assets</li>
                 <li>Dynamic Pages with Templating</li>
               </ul>
-              <ul>
+              <ul >
                 <li>The Query String</li>
                 <li>SSH Keys</li>
                 <li>MongoDB and NoSQL Databases</li>
@@ -458,6 +458,10 @@ const IQGrid = styled.div`
       height: 20rem;
       margin-top: -80px;
     }
+    .node{
+
+      margin-left: -25px;
+    }
   }
 `;
 
@@ -536,6 +540,7 @@ const Info = styled.div`
   .bottom{
     @media (orientation: landscape), (max-width:600px) {
       margin-bottom: 50px;
+  }
   }
   .lambda {
     @media (max-width: 600px) {
