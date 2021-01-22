@@ -523,6 +523,7 @@ const Logo = styled.div`
   @media (max-width: 470px) {
     width: 30rem;
     height: 10rem;
+    margin-top: 25px;
   }
 `;
 const Info = styled.div`
