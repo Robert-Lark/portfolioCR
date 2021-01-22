@@ -51,7 +51,7 @@ const BandcampQual = () => {
           <Info>
             <div style={{textAlign: "center"}}>
               <h5 style={{marginBottom: "10px"}}>
-                I graduate from Lambda's eighteen month Full Stack Web
+                I graduate from Lambda's twelve month Full Stack Web
                 Development program at the end of March. With a heavy focus on
                 teamwork and leadership skills Lambda has provided me a strong
                 foundation for entering the web dev workforce.
