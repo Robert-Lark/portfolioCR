@@ -225,7 +225,7 @@ const CoursesGrid = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   @media (max-width: 600px) {
-    grid-template-rows: 20% 40% 40%;
+    height: 100vh;
     }
 `;
 
