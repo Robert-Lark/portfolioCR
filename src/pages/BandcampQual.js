@@ -454,7 +454,7 @@ const IQGrid = styled.div`
   @media (max-width: 600px) {
     .move-up {
       height: 20rem;
-      margin-top: -100px;
+      margin-top: -80px;
     }
   }
 `;
