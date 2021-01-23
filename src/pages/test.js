@@ -219,7 +219,7 @@ const TitleInfoDiv = styled.div`
 
 const CoursesGrid = styled.div`
 
-  height: 100vh;
+  height: 100%;
   padding: 1rem;
   display: grid;
   align-items: center;
@@ -228,6 +228,9 @@ const CoursesGrid = styled.div`
   grid-template-rows:  minmax(0, 1fr 1fr);
     @media (min-height: 930px) {
     height: 65vh;
+ }
+ @media (min-width: 900px) {
+    height:auto;
  }
 `;
 
