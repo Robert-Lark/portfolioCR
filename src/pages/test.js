@@ -177,7 +177,7 @@ const Test = () => {
             <List>
               <h2>I Learned</h2>
               {data.li.map((listItem) => (
-                <ul>
+                <ul style={{listStyleType: "none"}}>
                   <li key={listItem}>{listItem}</li>
                 </ul>
               ))}

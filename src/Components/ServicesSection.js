@@ -113,6 +113,11 @@ const StyledCards = styled.div`
  grid-template-rows: 45% 45%;
 gap: 20%;
   }
+  @media (max-height: 1000px) {
+    grid-template-columns: 100px 100px;
+  grid-template-rows: 10px 10px 1fr;
+  gap: 100px;
+  }
   @media (max-width: 1000px) {
     grid-template-columns: 100px 100px;
   grid-template-rows: 10px 10px 1fr;
