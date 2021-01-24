@@ -78,6 +78,7 @@ const StyledServices = styled(StyledTools)`
 `;
 const StyledCards = styled.div`
   display: grid;
+  align-items: center;
   grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 1rem;
   @media (max-width: 400px) {
