@@ -38,7 +38,7 @@ const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <StyledServices
-      variants={scrollReveal}
+      //variants={scrollReveal}
       animate={controls}
       initial="hidden"
       ref={element}
@@ -81,6 +81,10 @@ const StyledCards = styled.div`
   align-items: center;
   grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 1rem;
+  @media (max-width: 1300px) {
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
   @media (max-width: 400px) {
     grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 40px;
