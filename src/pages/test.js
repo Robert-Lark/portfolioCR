@@ -191,12 +191,21 @@ const Test = () => {
 };
 
 const StyledWork = styled.div`
-height: 100%;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  @media (min-width: 1800px) {
+    margin: 0 10%;
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 const TitleDiv = styled.div`
@@ -218,39 +227,38 @@ const TitleInfoDiv = styled.div`
 `;
 
 const CoursesGrid = styled.div`
-
   height: 100%;
   padding: 1rem;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows:  minmax(0, 1fr 1fr);
-    @media (min-height: 930px) {
+  grid-template-rows: minmax(0, 1fr 1fr);
+  @media (min-height: 930px) {
     height: 65vh;
- }
- @media (min-width: 900px) {
-    height:auto;
- }
+  }
+  @media (min-width: 900px) {
+    height: auto;
+  }
 `;
 
 const Logo = styled.div`
   width: 50vw;
   padding: 2rem;
   @media (max-width: 600px) {
-        width: 60vw;
-    }
-    @media (max-width: 400px) {
-        width: 75vw;
-    }
+    width: 60vw;
+  }
+  @media (max-width: 400px) {
+    width: 75vw;
+  }
   img {
     border-radius: 20px;
     max-width: 50%;
     @media (max-width: 900px) {
-        max-width: 80%;
+      max-width: 80%;
     }
     @media (max-width: 600px) {
-        max-width: 100%;
+      max-width: 100%;
     }
   }
 `;
@@ -260,7 +268,12 @@ const Info = styled.div`
     font-size: 2rem;
     color: black;
     font-weight: lighter;
+    @media (min-width: 1800px) {
+      font-size: 1.5rem;
+      padding: 0 25px;
+    }
   }
+  
 `;
 
 const List = styled.div`
@@ -271,10 +284,14 @@ const List = styled.div`
     padding: 1rem;
     color: black;
   }
+
   li {
     font-size: 2rem;
+    @media (min-width: 1800px) {
+      font-size: 1rem;
+    }
     @media (max-width: 400px) {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
   }
   margin-bottom: 5px;
@@ -284,7 +301,12 @@ const Line = styled.div`
   border-top: 2px solid black;
   height: 1px;
   width: 80vw;
-
+  @media (min-width: 1800px) {
+    width: 60vw;
+    padding-top: 25px;
+     
+    }
+    
 `;
 
 export default Test;
