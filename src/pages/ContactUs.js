@@ -29,7 +29,7 @@ const ContactUs = () => {
             <Circle></Circle>
             <h2>
               Linkedin:{" "}
-              <a href="https://www.linkedin.com/in/robertlark/">Robert Lark</a>
+              <a href="https://www.linkedin.com/in/robertlark/" target="blank">Robert Lark</a>
             </h2>
           </Social>
         </Hide>
@@ -43,25 +43,25 @@ const ContactUs = () => {
           <Social variants={titleAnimation}>
             <div className="list">
               <ul>
-              <a href="https://github.com/Robert-Lark">
+              <a href="https://github.com/Robert-Lark" target="blank">
                   <li>Github</li>
                 </a>
-                <a href="https://www.instagram.com/burntskies25/">
+                <a href="https://www.instagram.com/burntskies25/" target="blank">
                   <li>Instagram Personal</li>
                 </a>
-                <a href="https://www.instagram.com/quietcalmrecords/">
+                <a href="https://www.instagram.com/quietcalmrecords/" target="blank">
                   <li>Instagram Quiet Calm Records</li>
                 </a>
-                <a href="https://twitter.com/RobLark4">
+                <a href="https://twitter.com/RobLark4" target="blank">
                   <li>Twitter</li>
                 </a>
-                <a href="https://bandcamp.com/deadfactory">
+                <a href="https://bandcamp.com/deadfactory" target="blank">
                   <li>Bandcamp</li>
                 </a>
-                <a href="https://soundcloud.com/quietcast">
+                <a href="https://soundcloud.com/quietcast" target="blank">
                   <li>Soundcloud</li>
                 </a>
-                <a href="https://www.discogs.com/user/quietcalm">
+                <a href="https://www.discogs.com/user/quietcalm" target="blank">
                   <li>Discogs</li>
                 </a>
               </ul>

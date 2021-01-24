@@ -29,25 +29,25 @@ const FaqSection = () => {
           <div className="answer">
             <motion.p variant={scrollReveal}>
               <div className="list">
-                <a href="https://github.com/Robert-Lark">
+                <a href="https://github.com/Robert-Lark" target="blank">
                   <motion.p>Github</motion.p>
                 </a>
-                <a href="https://www.instagram.com/burntskies25/">
+                <a href="https://www.instagram.com/burntskies25/" target="blank">
                   <motion.p>Instagram Personal</motion.p>
                 </a>
-                <a href="https://www.instagram.com/quietcalmrecords/">
+                <a href="https://www.instagram.com/quietcalmrecords/" target="blank">
                   <motion.p>Instagram Quiet Calm Records</motion.p>
                 </a>
-                <a href="https://twitter.com/RobLark4">
+                <a href="https://twitter.com/RobLark4" target="blank">
                   <motion.p>Twitter</motion.p>
                 </a>
-                <a href="https://bandcamp.com/deadfactory">
+                <a href="https://bandcamp.com/deadfactory" target="blank">
                   <motion.p>Bandcamp</motion.p>
                 </a>
-                <a href="https://soundcloud.com/quietcast">
+                <a href="https://soundcloud.com/quietcast" target="blank">
                   <motion.p>Soundcloud</motion.p>
                 </a>
-                <a href="https://www.discogs.com/user/quietcalm">
+                <a href="https://www.discogs.com/user/quietcalm" target="blank">
                   <motion.p>Discogs</motion.p>
                 </a>
               </div>
