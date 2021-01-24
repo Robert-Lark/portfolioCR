@@ -7,7 +7,7 @@ import MovieDetail from "./pages/MovieDetail";
 import ContactUs from "./pages/ContactUs";
 //import BandcampQual from "./pages/BandcampQual";
 import {AnimatePresence} from "framer-motion";
-import Test from "./pages/test";
+import Qualifications from "./pages/Qualifications";
 
 function App() {
   const location = useLocation();
@@ -25,7 +25,7 @@ function App() {
           </Route>
           <Route path="/qualifications">
             {/* <BandcampQual /> */}
-            <Test />
+            <Qualifications />
           </Route>
           <Route path="/work/:id">
             <MovieDetail />

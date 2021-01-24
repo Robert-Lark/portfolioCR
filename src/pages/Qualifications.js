@@ -13,7 +13,7 @@ const data = [
   {
     img: lambdaLogo,
     info:
-      "I graduate from Lambda's twelve month Full Stack Web Development program at the end of March. With a heavy focus on teamwork and leadership skills Lambda has provided me a strong foundation for entering the web dev workforce.",
+      "I graduate from Lambda's twelve month Full Stack Web Development program at the end of March. With a heavy focus on teamwork and leadership skills, Lambda has provided me a strong foundation for entering the web dev workforce.",
     li: [
       "HTML",
       "CSS",
@@ -273,7 +273,6 @@ const Info = styled.div`
       padding: 0 25px;
     }
   }
-  
 `;
 
 const List = styled.div`
@@ -288,7 +287,7 @@ const List = styled.div`
   li {
     font-size: 2rem;
     @media (min-width: 1800px) {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
     @media (max-width: 400px) {
       font-size: 1.5rem;
@@ -304,9 +303,7 @@ const Line = styled.div`
   @media (min-width: 1800px) {
     width: 60vw;
     padding-top: 25px;
-     
-    }
-    
+  }
 `;
 
 export default Test;
