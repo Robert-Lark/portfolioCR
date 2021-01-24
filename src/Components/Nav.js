@@ -117,5 +117,13 @@ const StyledLine = styled(motion.div)`
     bottom: -80%;
     left: 0%;
   }
+  @media (min-width: 1300px) {
+    height: 0.3rem;
+  background: #23d997;
+  width: 0%;
+  position: absolute;
+  bottom: -80%;
+  left: 28%;
+  }
 `;
 export default Nav;
