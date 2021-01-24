@@ -50,10 +50,10 @@ const Projects = () => {
             </div>
           </QC>
         </StyledCards>
-        <a href="https://www.quietcast.art">
+        <a href="https://www.quietcast.art" target="blank">
           <button>Visit</button>
         </a>
-        <a href="https://github.com/Robert-Lark/newHomeFrontend">
+        <a href="https://github.com/Robert-Lark/newHomeFrontend" target="blank">
           <button>Github</button>
         </a>
       </StyledTitle>
@@ -85,7 +85,7 @@ const Projects = () => {
             </div>
           </QCR>
         </StyledCards>
-        <a href="https://www.quietcalmrecords.com">
+        <a href="https://www.quietcalmrecords.com" target="blank">
           <button>Visit</button>
         </a>
       </StyledTitle>
@@ -110,10 +110,10 @@ const Projects = () => {
             </div>
           </TopTen>
         </StyledCards>
-        <a href="https://www.quietcast.art/topten">
+        <a href="https://www.quietcast.art/topten" target="blank">
           <button>Visit</button>
         </a>
-        <a href="https://github.com/Robert-Lark/newHomeFrontend/blob/main/src/pages/topten.js">
+        <a href="https://github.com/Robert-Lark/newHomeFrontend/blob/main/src/pages/topten.js" target="blank">
           <button>Github</button>
         </a>
       </StyledTitle>
@@ -140,10 +140,10 @@ const Projects = () => {
             </div>
           </SG>
         </StyledCards>
-        <a href="https://zen-volhard-e00b02.netlify.app/">
+        <a href="https://zen-volhard-e00b02.netlify.app/" target="blank">
           <button>Visit</button>
         </a>
-        <a href="https://github.com/Robert-Lark/labelDash/tree/discogs">
+        <a href="https://github.com/Robert-Lark/labelDash/tree/discogs" target="blank">
           <button>Github</button>
         </a>
       </StyledTitle>
