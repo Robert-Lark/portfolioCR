@@ -63,7 +63,6 @@ const ServicesSection = () => {
 
 const StyledServices = styled(StyledTools)`
   text-align: center;
-  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   overflow: hidden;
   text-align: center;
@@ -79,20 +78,20 @@ const StyledServices = styled(StyledTools)`
 const StyledCards = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
   @media (max-width: 1300px) {
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
-}
-@media (max-width: 680px) {
-    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 40px;
-}
+  }
   @media (max-width: 400px) {
-    grid-template-columns:repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 40px;
-}
+  }
 `;
 const StyledCard = styled.div`
   display: flex;
@@ -114,32 +113,32 @@ const StyledCard = styled.div`
     }
     @media (max-width: 1300px) {
       img {
-      float: left;
-      width: 200px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 20px;
-      margin: 10px;
-  }
+        float: left;
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: 10px;
+      }
     }
     @media (max-width: 600px) {
       img {
-      float: left;
-      width: 150px;
-      height: 115px;
-      object-fit: cover;
-      border-radius: 20px;
-    }
-    h3 {
-      margin-left: 1rem;
-      background: white;
-      color: black;
-      padding: 1rem;
-    }
+        float: left;
+        width: 150px;
+        height: 115px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      h3 {
+        margin-left: 1rem;
+        background: white;
+        color: black;
+        padding: 1rem;
+      }
     }
   }
-    @media (max-width: 400px) {
-      img {
+  @media (max-width: 400px) {
+    img {
       float: left;
       width: 150px;
       height: 100px;
@@ -152,7 +151,7 @@ const StyledCard = styled.div`
       color: black;
       padding: 1rem;
     }
-    }
+  }
 `;
 
 export default ServicesSection;
