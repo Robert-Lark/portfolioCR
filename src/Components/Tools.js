@@ -85,7 +85,7 @@ const StyledCards = styled.div`
     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
 }
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 40px;
 }
