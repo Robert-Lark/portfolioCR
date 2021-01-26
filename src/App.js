@@ -3,9 +3,8 @@ import {Switch, Route, useLocation} from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import GlobalStyle from "./Components/GlobalStyle";
 import Nav from "./Components/Nav";
-import MovieDetail from "./pages/MovieDetail";
+import Me from "./pages/Me";
 import ContactUs from "./pages/ContactUs";
-//import BandcampQual from "./pages/BandcampQual";
 import {AnimatePresence} from "framer-motion";
 import Qualifications from "./pages/Qualifications";
 
@@ -20,17 +19,15 @@ function App() {
           <Route exact path="/">
             <AboutUs />
           </Route>
+          <Route path="/aboutMe">
+            <Me />
+          </Route>
           <Route path="/contact">
             <ContactUs />
           </Route>
           <Route path="/qualifications">
-            {/* <BandcampQual /> */}
             <Qualifications />
           </Route>
-          <Route path="/work/:id">
-            <MovieDetail />
-          </Route>
-        
         </Switch>
       </AnimatePresence>
     </div>

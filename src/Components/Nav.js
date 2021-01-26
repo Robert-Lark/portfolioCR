@@ -35,6 +35,16 @@ const Nav = () => {
           />
         </li>
         <li>
+          <a href="/aboutMe">
+            About Me
+          </a>
+          <StyledLine
+            transition={{duration: 0.75}}
+            initial={{width: "0%"}}
+            animate={{width: pathname === "/aboutMe" ? "100%" : "0%"}}
+          />
+        </li>
+        <li>
           <a href="/contact">
             Contact
           </a>
