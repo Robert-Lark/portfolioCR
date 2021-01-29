@@ -28,7 +28,7 @@ const AboutMe = () => {
     }
     // eslint-disable-next-line
   }, [reference]);
-  const [element0, view0] = useInView({threshold: 0.6});
+
   const [element1, view1] = useInView({threshold: 0.6});
   const [element2, view2] = useInView({threshold: 0.6});
   const [element3, view3] = useInView({threshold: 0.6});
@@ -38,7 +38,7 @@ const AboutMe = () => {
   const [element7, view7] = useInView({threshold: 0.6});
   return (
     <AboutMeContainer>
-      <Box0 ref={element0} className={view0 ? "show" : "hide"}>
+      <Box0>
         <h2>
           I love to work hard and try new things. Be it working as a Herd
           Manager on Ranch, Bartending at Toronto's busiest BBQ joint or working
@@ -57,7 +57,7 @@ const AboutMe = () => {
           The great outdoors are my second home and I was truly spoilt to have
           grown up in New Zealand where there are thousands of multi-day trails
           throughout the untouched wilderness. I am proud to have completed
-          several 7-10 day long solo expeditions one of which earned me the Duke
+          several 7-10 day long solo expeditions, one of which earned me the Duke
           of Edinburgh award.
         </h2>
         <img src={hiking1} alt="about" />
