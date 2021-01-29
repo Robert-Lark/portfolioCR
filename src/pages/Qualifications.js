@@ -1,13 +1,13 @@
 import React, {useEffect} from "react";
 import styled from "styled-components";
-import advancedReactLogo from "../img/advancedReactLogo.png";
-import lambdaLogo from "../img/lambdaLogo.png";
-import ES6Logo from "../img/ES6Logo.jpg";
-import nodeLogo from "../img/nodeLogo.jpg";
-import materialUiLogo from "../img/materialUILogo.jpg";
-import creativeReactLogo from "../img/creativeReact.png";
-import AdvancedCSSLogo from "../img/AdvancedCssAndSass.jpg";
-import cssGrid from "../img/cssGrid.png";
+import advancedReactLogo from "../img/Other/advancedReactLogo.png";
+import lambdaLogo from "../img/Other/lambdaLogo.png";
+import ES6Logo from "../img/Other/ES6Logo.jpg";
+import nodeLogo from "../img/Other/nodeLogo.jpg";
+import materialUiLogo from "../img/Other/materialUILogo.jpg";
+import creativeReactLogo from "../img/Other/creativeReact.png";
+import AdvancedCSSLogo from "../img/Other/AdvancedCssAndSass.jpg";
+import cssGrid from "../img/Other/cssGrid.png";
 
 const data = [
   {
@@ -157,14 +157,12 @@ const Test = () => {
       <TitleDiv>
         <h1>QUALIFICATIONS</h1>
       </TitleDiv>
-
       <TitleInfoDiv>
         <h2>
           Here you can find information about my education and the
           qualifications and endorsements I have recieved.
         </h2>
       </TitleInfoDiv>
-
       {data.map((data) => {
         return (
           <CoursesGrid>

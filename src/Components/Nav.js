@@ -34,16 +34,16 @@ const Nav = () => {
             animate={{width: pathname === "/qualifications" ? "100%" : "0%"}}
           />
         </li>
-        {/* <li>
+        <li>
           <a href="/aboutMe">
-            About Me
+            About
           </a>
           <StyledLine
             transition={{duration: 0.75}}
             initial={{width: "0%"}}
             animate={{width: pathname === "/aboutMe" ? "100%" : "0%"}}
           />
-        </li> */}
+        </li>
         <li>
           <a href="/contact">
             Contact
@@ -70,6 +70,7 @@ const StyledNav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  }
   a {
     color: white;
     text-decoration: none;
@@ -87,6 +88,9 @@ const StyledNav = styled.nav`
     padding-left: 10rem;
     position: relative;
     font-size: 2rem;
+    @media (max-width: 600px) {
+      margin: 0 10%;
+    }
     @media (max-width: 470px) {
       font-size: 1rem;
       margin: 0 20%;

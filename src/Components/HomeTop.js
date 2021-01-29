@@ -1,5 +1,5 @@
 import React from "react";
-import home1 from "../img/home1.png";
+import home1 from "../img/Other/home1.png";
 import {titleAnimation, photoAnimation} from "../Animation";
 import Wave from "./Wave";
 import styled from "styled-components";
@@ -9,16 +9,15 @@ import {
   StyledHide,
   StyledImage,
 } from "../styles";
-import CSSLogo from "../img/cssLogo.png";
-import HTMLLogo from "../img/htmlLogo.png";
-import NodeLogo from "../img/NODELOGOO.png";
-import ReactDb from "../img/reactLogo.png";
-import JSLogo from "../img/JS.png";
-
+import CSSLogo from "../img/Other/cssLogo.png";
+import HTMLLogo from "../img/Other/htmlLogo.png";
+import NodeLogo from "../img/Other/NODELOGOO.png";
+import ReactDb from "../img/Other/reactLogo.png";
+import JSLogo from "../img/Other/JS.png";
 
 import {motion} from "framer-motion";
 
-const BandcampAboutSection = () => {
+const HomeTop = () => {
   return (
     <StyledAbout exit="exit">
       <StyledDescription>
@@ -26,18 +25,18 @@ const BandcampAboutSection = () => {
           <Wave />
           <StyledHide>
             <motion.h2 variants={titleAnimation}>
-              Making 
-              <span style={{color: "#EC3944"}}> Art</span>
+              Passionate
+              <span style={{color: "#EC3944"}}> Full Stack</span>
             </motion.h2>
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={titleAnimation}>
-            not <span>content</span> 
+              <span>Web Developer</span>
             </motion.h2>
           </StyledHide>
           <StyledHide>
             <motion.h2 variants={titleAnimation} style={{marginBottom: "50px"}}>
-             using:
+              using:
             </motion.h2>
           </StyledHide>
           <StyledHide>
@@ -105,4 +104,4 @@ const StyledLogo = styled(motion.img)`
   width: 15%;
 `;
 
-export default BandcampAboutSection;
+export default HomeTop;

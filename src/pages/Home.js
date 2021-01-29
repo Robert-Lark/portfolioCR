@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 //import AboutSection from "../Components/AboutSection";
-import BandcampAboutSection from "../Components/BandcampAbout";
+import HomeTop from "../Components/HomeTop";
 //import ServicesSection from "../Components/ServicesSection";
 import Tools from "../Components/Tools"
 import ProjectsHome from "../Components/ProjectsHome";
@@ -20,7 +20,7 @@ const AboutUs = () => {
       initial="hidden"
       animate="show"
     >
-      <BandcampAboutSection />
+      <HomeTop />
       <Tools />
       <ProjectsHome/>
       <FaqSection />

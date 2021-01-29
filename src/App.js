@@ -1,9 +1,9 @@
 import React from "react";
 import {Switch, Route, useLocation} from "react-router-dom";
-import AboutUs from "./pages/AboutUs";
+import AboutUs from "./pages/Home";
 import GlobalStyle from "./Components/GlobalStyle";
 import Nav from "./Components/Nav";
-import Me from "./pages/Me";
+import Me from "./pages/AboutMe";
 import ContactUs from "./pages/ContactUs";
 import {AnimatePresence} from "framer-motion";
 import Qualifications from "./pages/Qualifications";

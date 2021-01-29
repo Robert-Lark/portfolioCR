@@ -35,6 +35,7 @@ export const fade = {
     transition: { ease: "easeOut", duration: 0.75 },
   },
 };
+
 export const photoAnim = {
   hidden: { scale: 1.5, opacity: 0 },
   show: {
