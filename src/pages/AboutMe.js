@@ -20,10 +20,14 @@ import garden1 from "../img/AboutMe/garden1.png";
 import garden2 from "../img/AboutMe/garden2.jpg";
 
 const AboutMe = () => {
-const [reference, setReference] = useState(false)
-useEffect(() => {
-  window.scrollTo(0, 0)
-}, [reference])
+  const [reference, setReference] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    if (view7) {
+      setReference(false);
+    }
+    // eslint-disable-next-line
+  }, [reference]);
   const [element0, view0] = useInView({threshold: 0.6});
   const [element1, view1] = useInView({threshold: 0.6});
   const [element2, view2] = useInView({threshold: 0.6});
@@ -127,12 +131,12 @@ useEffect(() => {
         <img src={art} alt="about" />
       </Box7>
       <Button
-                onClick={() => {
-                  setReference(true)
-                }}
-              >
-                Return to the top
-              </Button>
+        onClick={() => {
+          setReference(true);
+        }}
+      >
+        Return to the top
+      </Button>
     </AboutMeContainer>
   );
 };
@@ -163,17 +167,15 @@ const AboutMeContainer = styled(motion.div)`
       border: 1px solid red;
     }
     @media (max-width: 1400px) {
-
     }
     @media (max-width: 900px) {
-
     }
     @media (max-width: 600px) {
       display: flex;
       flex-direction: column;
-
     }
-    @media (max-width: 400px) {}
+    @media (max-width: 400px) {
+    }
   }
   .show {
     transition: opacity 1s;
@@ -191,12 +193,12 @@ const AboutMeContainer = styled(motion.div)`
   }
   h2 {
     width: 20vw;
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
     @media (max-width: 900px) {
       width: 27vw;
     }
     @media (max-width: 600px) {
-      width: 80vw;  
+      width: 80vw;
       text-align: center;
     }
   }
@@ -216,8 +218,15 @@ const AboutMeContainer = styled(motion.div)`
   }
 `;
 const Button = styled.button`
-
-`
+  background: grey;
+  cursor: pointer;
+  border: 2px solid rgb(65, 65, 65);
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+  &:hover {
+    background: rgb(65, 65, 65);
+  }
+`;
 
 const Box0 = styled(motion.div)``;
 const Box1 = styled(motion.div)``;
