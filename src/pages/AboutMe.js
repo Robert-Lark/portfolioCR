@@ -24,14 +24,14 @@ const [reference, setReference] = useState(false)
 useEffect(() => {
   window.scrollTo(0, 0)
 }, [reference])
-  const [element0, view0] = useInView({threshold: 0.8});
-  const [element1, view1] = useInView({threshold: 0.8});
-  const [element2, view2] = useInView({threshold: 0.8});
-  const [element3, view3] = useInView({threshold: 0.8});
-  const [element4, view4] = useInView({threshold: 0.8});
-  const [element5, view5] = useInView({threshold: 0.8});
-  const [element6, view6] = useInView({threshold: 0.8});
-  const [element7, view7] = useInView({threshold: 0.8});
+  const [element0, view0] = useInView({threshold: 0.6});
+  const [element1, view1] = useInView({threshold: 0.6});
+  const [element2, view2] = useInView({threshold: 0.6});
+  const [element3, view3] = useInView({threshold: 0.6});
+  const [element4, view4] = useInView({threshold: 0.6});
+  const [element5, view5] = useInView({threshold: 0.6});
+  const [element6, view6] = useInView({threshold: 0.6});
+  const [element7, view7] = useInView({threshold: 0.6});
   return (
     <AboutMeContainer>
       <Box0 ref={element0} className={view0 ? "show" : "hide"}>
