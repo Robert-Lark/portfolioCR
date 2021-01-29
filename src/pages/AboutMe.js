@@ -100,7 +100,7 @@ const AboutMe = () => {
       >
         <h2>
           I love the peacefull state my minds falls in when out in the garden.
-          Together with my Wife we grow over 50 kinds of vegetable.
+          Together with my wife we grow over 50 kinds of vegetable.
         </h2>
         <img src={garden1} alt="about" />
         <img src={garden2} alt="about" />
