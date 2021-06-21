@@ -24,12 +24,11 @@ const Projects = () => {
       <StyledTitle>
         <h2>Sonic Architecture</h2>
         <h3>
-          Using Redux and GraphQL this site hooks into several API's to display
-          information on independent record labels as well as a feed of music
-          related content. Full spectrum authentication allows users to
-          sign-up/log-in and personalize their news feed & a fully secured POS
-          allows customers to purchase vinyl and cd copies of their favorite
-          albums.
+          This site hooks into the Discogs API to display information about
+          record labels and albums from select musicians. There is a news feed
+          where the user can get up to date info on the latest new pieces of
+          music coming out related to the artists and a reccomended section
+          allowing users to see pre-selected albums.
         </h3>
         <StyledCards>
           <SG>
